@@ -1,0 +1,105 @@
+#sign_up{
+    border: 1px solid salmon;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+    height: auto;
+}
+
+
+#sign_logo{
+  
+    height: 130px;
+
+}
+#forms{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  height: 300px;
+}
+
+
+form {
+    margin: 10px;
+    display: grid;
+  width:auto;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 10px;
+  text-align: left;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+
+ label {
+  color: black;
+  font-size: 16px;
+  margin-left: 10px;
+  margin-bottom: 6px;
+  line-height: 1;
+}
+
+span{
+    color: black;
+}
+input,
+select,
+textarea {
+  width:500px;
+  padding: 15px;
+  border: 1px solid #ced1d6;
+  
+  box-sizing: border-box;
+  margin: 6px 0px 5px 0px;
+  resize: vertical;
+  color: black;
+  
+}
+
+button{
+  margin: auto;
+  height: 40px;
+  width:300px;
+  border: none;
+  background-color:grey ;
+  color: black;
+   font-size: 20px;
+   font-family: 'Montserrat', sans-serif;
+ 
+ 
+  
+}
+button:hover{
+  background-color: grey;
+  color: black;
+  border:0.5px solid #ced1d6;
+}
+
+h1 {
+  text-align: center;
+  font-size: 40px;
+  color: black;
+ margin-top: 60px;
+}
+#register{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+
+
+}
+#register>img{
+  height: 200px;
+  margin: auto;
+}
+#register-form{
+  visibility: hidden;
+ 
+}
+#span_div{
+  margin: 5px;
+  display: grid;
+}
