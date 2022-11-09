@@ -1,0 +1,163 @@
+
+#landing_page_top_1{
+
+    height: 50px;
+    background-color: #E6F5FF;
+
+    color: #005699;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#landing_page_top_2 {
+
+    width: 90%;
+    margin: auto;
+
+    text-align: center;
+
+}
+
+#landing_page_top_2 > div {
+
+    background-color: red;
+    height: 40px;
+
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#landing_page_top_2 > img{
+
+    width: 100%;
+
+}
+
+#landing_page_top_3 {
+
+    width: 90%;
+    margin: auto;
+
+    padding-top: 10px;
+    text-align: center;
+
+    background-color: #F2F2F2;
+
+}
+
+#landing_page_top_3_offers {
+
+    /* border: 2px solid red; */
+
+    display: flex;
+    text-align: center;
+
+    justify-content: space-around;
+
+    padding: 20px;
+
+}
+
+    #landing_page_top_3_offers > div{
+
+        /* border: 2px solid green; */
+        padding: 20px;
+        padding-left: 50px;
+        padding-right: 50px;
+        font-size: 14px;
+
+        background-color: white;
+
+    }
+
+    #landing_page_top_3_offers > div > h4{
+
+        color: #005699;
+
+    }
+
+    #landing_page_top_3_offers > div > button {
+
+        width: 100%;
+        padding: 12px;
+
+        border: 0px;
+
+        border-radius: 0px;
+
+        background-color: black;
+        color: white;
+
+    }
+
+#landing_page_mid{
+
+    width: 90%;
+    margin: auto;
+
+}
+
+    #landing_page_mid_1 img {
+
+        width: 100%;
+        margin-top: 30px;
+
+    }
+
+    #landing_page_mid_2 {
+
+
+        text-align: center;
+        
+    } 
+
+    #landing_page_mid_2 > div:nth-child(2) {
+
+
+        height: 250px;
+
+        display: flex;
+        justify-content: space-around;
+
+    } 
+
+    #landing_page_mid_2 > div:nth-child(3) {
+
+        border: 2px solid red;
+
+        width: 45%;
+        margin: auto;
+
+
+    }
+
+    #landing_page_mid_2 > div:nth-child(3) > button {
+
+        padding: 20px;
+
+    }
+
+    #landing_page_mid_2 > div > div {
+
+        /* border: 2px solid green; */
+        width: 15%;
+
+        font-size: 13px;
+
+    }
+
+    #landing_page_mid_2 > div > div > img{
+
+        width: 100%;
+        height: 80%;
+
+    }
+
+    
