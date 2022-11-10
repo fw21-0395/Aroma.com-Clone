@@ -10,7 +10,7 @@ navbar_div.innerHTML=navbar();
    log.style.visibility="visible";
 
    document.getElementById('l_username').value="";
-   document.getElementById('l_password').value="";
+  document.getElementById('l_password').value="";
    document.getElementById('l_email').value="";
 
 });
@@ -23,10 +23,30 @@ document.querySelector("#log #close-btntwo").addEventListener("click",()=>{
 
 });
 
+
+document.querySelector("body").addEventListener("load",()=>{
+  //console.log("gbb")
+  let data = JSON.parse(localStorage.getItem('login_data'));
+  if(data==null){
+    span.innerText = `user`;
+ 
+  }else{
+    span.innerText = data.username;
+  }
+  
+});
+
+
 function usernameChange() {
    
    let span = document.getElementById("open-popuptwo");
-   span.innerText  = `Log in`
+   let data = JSON.parse(localStorage.getItem('login_data'));
+   if(data==null){
+    span.innerText = `user`;
+   
+   }else{
+    span.innerText = data.username;
+   };
 
    document.getElementById("login").addEventListener("click",(event)=>{
        event.preventDefault()
@@ -57,9 +77,10 @@ function usernameChange() {
                 localStorage.setItem('login_data',JSON.stringify(login_data ," login_data " ) );
                 alert('User LogedIn successssfully !!');
                 //if need to change the location of window give the next location below 
+               
                  window.location="topoffer.html";   
                }
-               // let data = JSON.parse(localStorage.getItem('login_data'));
+                let data = JSON.parse(localStorage.getItem('login_data'));
             }catch(err){
                 console.log("err");
                 alert('something went wrong !' );
@@ -69,7 +90,7 @@ function usernameChange() {
         };
         };
       }
- 
+     //
       let u1 =new user();
       Login();
     function Login(){
@@ -80,8 +101,8 @@ function usernameChange() {
         alert("check your data!");
     }else{
         u1.Login(username,password,email);
-        span.innerText = username;
     }
+  
    }
 });
 }

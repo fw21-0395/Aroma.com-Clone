@@ -2,7 +2,7 @@
 
 
 class user {
-async  signup(n, e,z){
+async  order_track(n, e,z){
 console.log("gauri");
     
             this.order_number=n;
@@ -44,6 +44,11 @@ const email = document.getElementById('email').value;
 
 const zipcode=document.getElementById('zipcode').value;
 
-u1.signup(order_number,email,zipcode);
+if(order_number==""||email==""||zipcode==""){
+    alert("check the data!");
+}else{
+    u1. order_track(order_number,email,zipcode);
+}
+
 }
 
