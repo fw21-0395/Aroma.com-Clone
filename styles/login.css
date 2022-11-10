@@ -1,26 +1,43 @@
 #navbar{
-  border: 0px solid blue;
+  /* border: 0px solid blue;
   height: 100px;
   display: grid;
   justify-content: center;
   align-items: center;
-  grid-template-rows: repeat(2,1fr);
+  grid-template-rows: repeat(2,1fr); */
+
+  position: relative;
+}
+
+#profile{
+
+  /* border: 2px solid yellow; */
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  margin-bottom: 50px;
+
 }
 
 
 #logoff{
+
+  /* background-color: yellow; */
+
   width: 200px;
   display: grid;
   justify-content: center;
   text-align: center;
+
+  position: absolute;
 /*margin: auto;*/
 
 }
 
 
 
-#logoff >div img{
-  width: 15%;
+#logoff > div img{
+  width: 10%;
 }
 
 
@@ -41,13 +58,41 @@
   text-decoration:none ;
 }
 
+#log {
+
+  padding-left: 20px;
+  padding-right: 20px;
+
+  /* margin-right: 100px; */
+
+}
+
+#log input{
+
+  padding: 5px;
+
+}
+
+#log button{
+
+  margin: 20px;
+  padding: 10px;
+
+  border-radius: 10px;
+  border: 1px solid black;
+  background-color: black;
+  color: white;
+}
+
 #close-btntwo{
   justify-self:right;
 }
 
 #login-form{
-margin: 10px;
+
+  margin: 10px;
 }
+
 form{
 
 display: grid;
