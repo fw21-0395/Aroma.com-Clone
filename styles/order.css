@@ -1,4 +1,4 @@
-#sign_up{
+#order{
     border: 0px solid salmon;
     display: grid;
     justify-content: center;
@@ -10,29 +10,31 @@
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     padding: 20px;
     font-family: Trade Gothic W01 Light,Arial,sans-serif;
+   
+  
 }
 
 
-#sign_logo{
+#order_logo{
  height: 130px;
+ width: 1000px;
 }
 #forms{
     display: grid;
     justify-content: center;
     align-items: center;
-  height: 300px;
- 
+    margin:20px;
 }
 
-
 form {
-    margin: 10px;
+   
     display: grid;
   width:auto;
   padding: 10px;
   text-align: left;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
 
 form > p{
   font-family: Trade Gothic W01 Light,Arial,sans-serif;
@@ -93,21 +95,6 @@ h1 {
   font-size: 40px;
   color: black;
  margin-top: 60px;
-}
-#register{
-  display: grid;
-  justify-content: center;
-  align-items: center;
-
-
-}
-#register>img{
-  height: 200px;
-  margin: auto;
-}
-#register-form{
-  visibility: hidden;
- 
 }
 #span_div{
   margin: 5px;

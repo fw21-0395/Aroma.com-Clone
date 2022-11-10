@@ -1,6 +1,6 @@
-import {nav_part} from "./nav_part.js";
-let navbar_div = document.getElementById('nav_part');
-navbar_div.innerHTML=nav_part();
+import {navbar} from "./components/navbar.js";
+let navbar_div = document.getElementById('navbar');
+navbar_div.innerHTML=navbar();
 
 
 
@@ -8,6 +8,11 @@ navbar_div.innerHTML=nav_part();
   // console.log("gb")
    document.querySelector("#log").classList.add("active");
    log.style.visibility="visible";
+
+   document.getElementById('l_username').value="";
+   document.getElementById('l_password').value="";
+   document.getElementById('l_email').value="";
+
 });
 
 
@@ -23,39 +28,38 @@ function usernameChange() {
    let span = document.getElementById("open-popuptwo");
    span.innerText  = `Log in`
 
-
-
    document.getElementById("login").addEventListener("click",(event)=>{
        event.preventDefault()
-    
-      
-    
-      
+
        class user {
        #checkUsername(username){return username.includes('#')? false : true;}
       
      
-         #checkPassword(password){ return password.length > 8 ? true : false;}
+        #checkPassword(password){ return password.length > 8 ? true : false;}
 
         
      
          async  Login(username,password){
             let isValidated = this.#checkUsername(username) && this.#checkPassword(password) ;
               if(isValidated ){
-            this.username=username;
-           // this.email=email;
-            this.password=password;
+                this.username=username;
+                this.password=password;
             
     
             let login_data = (this);
             console.log(this);
             try{
-               
+               if( this.username=="Neeraj" &&  this.password=="aroma_12345"){
+                alert('Admin LogedIn successssfully !!');
+                 window.location="rough-admin.html";    
+
+               }else{
                 localStorage.setItem('login_data',JSON.stringify(login_data ," login_data " ) );
+                alert('User LogedIn successssfully !!');
+                //if need to change the location of window give the next location below 
+                 window.location="topoffer.html";   
+               }
                // let data = JSON.parse(localStorage.getItem('login_data'));
-              
-            alert('User LogedIn successssfully !!');
-            //window.location="index.html";    
             }catch(err){
                 console.log("err");
                 alert('something went wrong !' );
@@ -78,11 +82,7 @@ function usernameChange() {
         u1.Login(username,password,email);
         span.innerText = username;
     }
-    
-      
    }
-   
 });
 }
-
 usernameChange();
