@@ -6,22 +6,20 @@
     text-align: center;
     gap: 5px;
     height: auto;
-    cursor: pointer;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    padding: 20px;
-    font-family: Trade Gothic W01 Light,Arial,sans-serif;
 }
 
 
 #sign_logo{
- height: 130px;
+  
+    height: 130px;
+
 }
 #forms{
     display: grid;
     justify-content: center;
     align-items: center;
   height: 300px;
- 
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 
@@ -34,11 +32,7 @@ form {
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-form > p{
-  font-family: Trade Gothic W01 Light,Arial,sans-serif;
-  color: #333;
-  text-transform: uppercase;
-}
+
 
  label {
   color: black;
@@ -74,8 +68,8 @@ button{
   height: 40px;
   width:300px;
   border: none;
-  background-color:#333333 ;
-  color: white;
+  background-color:grey ;
+  color: black;
    font-size: 20px;
    font-family: 'Montserrat', sans-serif;
  
@@ -83,8 +77,8 @@ button{
   
 }
 button:hover{
-  background-color: white;
-  color: #333333;
+  background-color: grey;
+  color: black;
   border:0.5px solid #ced1d6;
 }
 

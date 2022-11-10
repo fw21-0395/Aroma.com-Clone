@@ -1,0 +1,162 @@
+body{
+
+    padding: 0px;
+    margin: 0px;
+
+    font-family: "Trade Gothic W01 Light", Arial, sans-serif;;
+}
+
+#promo_section{
+
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    color: #005699;
+
+}
+
+    #promo_section img{
+
+
+        height: 100%;
+        width: 30%;
+
+    }
+
+#pickup_store{
+
+    background-color: #F2F2F2;
+
+
+    height: 40px;
+
+
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    font-size: 14px;
+
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+    #pickup_store_div_1{
+
+        width: 22%;
+
+
+        display: flex;
+        justify-content: space-evenly;
+
+
+    }
+
+    #pickup_store_div_2{
+
+        width: 18%;
+
+        display: flex;
+        justify-content: space-evenly;
+
+    }
+
+    #pickup_store_div_2 i{
+
+        margin-top: 15px;
+
+    }
+
+#navbar_section_top{
+    
+
+    width: 100%;
+    height: 70px;
+
+    /* border: 2px solid red; */
+
+
+    display: flex;
+
+}
+    #navbar_section_top_left{
+
+        /* border: 2px solid green; */
+
+        width: 60%;
+
+        display: flex;
+        justify-content:end;
+
+    }
+
+    #navbar_section_top_left img{
+
+    width: 20%;
+    margin-left: 650px;
+
+    }
+
+    #navbar_section_top_right{
+
+        /* border: 2px solid green; */
+
+        width: 40%;
+
+        display: flex;
+
+        justify-content: space-around;
+        align-items: center;
+
+    }
+
+    #navbar_section_top_right input{
+
+        border: 0px;
+        height: 20px;
+        width: 250px;
+
+    }
+
+    #search{
+
+        border: 1px solid gray;
+        padding: 5px;
+    }
+
+#navbar_section_bottom{
+
+    display: flex;
+    justify-content: space-around;
+
+}
+
+#navbar_section_bottom > p {
+
+    padding: 10px;
+    color: gray;
+    font-size: 13px;
+
+}
+
+#navbar_section_bottom > p > a{
+
+    text-decoration:none;
+    color: gray;
+
+}
+
+#navbar_section_bottom > p:last-child {
+
+    padding: 10px;
+    color: #AF0103;
+
+}
+
+#navbar_section_bottom > p:hover{
+
+    cursor:default;
+
+    border-bottom: 3px solid #005699;
+
+}
