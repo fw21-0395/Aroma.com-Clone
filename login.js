@@ -50,13 +50,7 @@ function usernameChange() {
             let login_data = (this);
             console.log(this);
             try{
-                /*let res = await fetch(`https://masai-api-mocker.herokuapp.com/auth/login`,{
-                method: 'POST',
-                body:login_data,
-                headers: {
-                    'content-Type':'application/json',
-                },
-                });*/
+               
                 localStorage.setItem('login_data',JSON.stringify(login_data ," login_data " ) );
                // let data = JSON.parse(localStorage.getItem('login_data'));
               
