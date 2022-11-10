@@ -38,7 +38,8 @@ console.log("gauri");
             this.username = u;
             this.email = e ;
             this.password = p ;
-            
+            this.zipcode = p ;
+
             console.log(this);
            // let actual_data = JSON.stringify(this);
            let signup_data = (this);
@@ -51,24 +52,16 @@ console.log("gauri");
                 }else{
                     alert(`${this.username} Enter valid zipcode`);
                 }
-
-       // let  data = await res.json();
-       localStorage.setItem('signup_data',JSON.stringify(signup_data ," signup_data " ) );
-       // let data = JSON.parse(localStorage.getItem('login_data'));
-      
-           // console.log('data',data);
         }catch(err){
             console.log('err!',err);
         }
         }else{
-            alert('password length should be more than 9!'); 
+            let msg = document.getElementById("msg");
+            msg.innerText="Oops! Something's not right with your submission. Please try again!"; 
+            msg.style.backgroundColor="#f79d9f";
+            msg.style.color="#ed0331";
         };
  };
-
-   
-        
-        
-
 };
 let u1 =new user();
 
@@ -79,6 +72,7 @@ const username = document.getElementById('username').value;
 const email = document.getElementById('email').value;
 const password=document.getElementById('password').value;
 const zipcode=document.getElementById('zipcode').value;
-u1.signup(zipcode,name,last_name,username,email,password);
+
+u1.signup(name,last_name,username,email,password,zipcode);
 }
 

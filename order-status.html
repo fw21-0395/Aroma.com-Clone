@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/order-status.css">
+</head>
+<body>
+       <!--Add the nav bar and import in order.js file and make type as module-->
+    <div id="order">
+        <div class="notification">
+            <h4>My Bath & Body Works Rewards is now available nationwide! Join the VIPs</h4>
+        </div>
+
+        <div><img id="order_logo" src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dw290ae529/images/banners/order-status-banner-asset_d.svg?yocs=s_" alt="sign_up">
+        </div>
+        <div id="forms">
+    <div id="order-form">
+        <form>
+            <p>Order Tracking</p>
+            <hr>
+            <label >Order Number</label>
+            <input type="text" id="order_number" placeholder="Order Number" />
+            <label >Order Email</label>
+            <input type="text" id="email" placeholder="Email" />
+            <label >Billing ZIP Code</label>
+            <input type="text" id="zipcode" placeholder="ZIP Code" />
+            </form>
+            <button onclick="order()">CHECK STATUS</button>
+            <hr>
+        </div>
+        </div>
+        <div id="span_div">
+            <span> Or</span><br />
+            <span>Sign In to see your order history</span><br />
+            <span>After your order ships, tracking information may take 48 hours to appear. But don't worry! It's on the way.</span>
+        </div>
+       
+
+
+    </div>
+
+
+</body><script src="./scripts/order-status.js"></script>
+</html>
