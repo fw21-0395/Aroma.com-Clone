@@ -50,12 +50,14 @@
   text-decoration:none ;
   background-color: whitesmoke;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
- 
+  cursor: pointer;
+  opacity: 1;
 }
 
 #log > a{
   color: black;
   text-decoration:none ;
+  gap: 4px;
 }
 
 #log {
@@ -66,9 +68,14 @@
   /* margin-right: 100px; */
 
 }
+#log>.anc:hover {
+  background-color: #ddd;
+  color: black;
+}
+
 
 #log input{
-
+  border:0.5px solid #ced1d6;
   padding: 5px;
 
 }
@@ -86,14 +93,32 @@
 
 #close-btntwo{
   justify-self:right;
+  color: white;
+  background-color: #333333;
+  width: 30px;
+  height: 20px;
 }
 
 #login-form{
-
+  color:black;
   margin: 10px;
 }
 
 form{
-
+  color: black;
 display: grid;
+}
+
+h5{
+  font-family: Trade Gothic W01 Light,Arial,sans-serif;
+  color: #333;
+  text-transform: uppercase;
+}
+
+#login{
+  color: white;
+  background-color: #333333;
+  border: none;
+  height: 30px;
+  
 }

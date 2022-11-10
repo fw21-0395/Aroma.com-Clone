@@ -59,13 +59,13 @@ const navbar = () => {
                         <div id="log">
                                 <div class="close-btntwo" id="close-btntwo">&times;</div>
 
-                                <a class="" href="signup.html" title="Sign In or Sign Up">Sign Up</a>
+                                <a class="anc" href="signup.html" title=" Sign Up">Sign Up</a>
 
-                                <a class="" href="#order-status" title="Order Tracking">Order Tracking</a>
+                                <a class="anc" href="order-status.html" title="Order Tracking">Order Tracking</a>
 
-                                <a class="" href="#refresh" title="Refresh"> My Auto Refresh</a>
+                                <a class="anc" href="index.html" title="My wishlist">Home</a>
 
-                                <a class="" href="my_wishlist" title="My wishlist">My wishlist</a>
+                                <a class="anc" href="my_wishlist.html" title="My wishlist">My wishlist</a>
 
                                 <hr>
 
@@ -75,7 +75,7 @@ const navbar = () => {
                                         <div id="forms">
 
                                             <div id="login-form">
-                                                <h4>SIGN IN</h4>
+                                                <h5>SIGN IN</h5>
                                                 <span>If you already have an account with us, sign in below</span>
                                                 <hr>
 

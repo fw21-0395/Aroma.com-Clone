@@ -32,6 +32,7 @@
               <form>
                 <p>Create account </p>
                 <hr>
+                <p id="msg"></p>
                   <label >First Name</label>
                   <input type="text" id="name" placeholder="First Name" />
                   <label >Last Name</label>
@@ -42,8 +43,10 @@
                   <input type="text" id="email" placeholder="Email" />
                   <label >Password</label>
                   <input type="text" id="password" placeholder="Password" />
+                  <span style="color: red;">password length should be more than 8</span><br /> 
                   <label > ZIP Code</label>
                   <input type="text" id="zipcode" placeholder="ZIP Code" />
+                  <span style="color: red;">zipcode length should be more than 5</span><br /> 
                 </form>
                 <button onclick="Register()">signup </button>
         
@@ -54,7 +57,8 @@
     <hr>
     <div id="span_div">
 <span>QUESTIONS?</span><br />
-    <span> We're here for you! Call us at 1-234-756-5005.</span></div>
+    <span> We're here for you! Call us at 1-234-756-5005.</span>
+</div>
 </div>
 
 </body><script src="./scripts/signup.js"></script>
