@@ -43,14 +43,7 @@ console.log("gauri");
            // let actual_data = JSON.stringify(this);
            let signup_data = (this);
             try{
-            /*let res = await fetch (`https://masai-api-mocker.herokuapp.com/auth/register`,{
-            method: 'POST',
-            body: actual_data,
-            headers : {
-                'Content-Type':'application/json',
-            },
-            
-        });*/
+       
 
        // let  data = await res.json();
        localStorage.setItem('signup_data',JSON.stringify(signup_data ," signup_data " ) );
