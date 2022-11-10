@@ -43,17 +43,20 @@ console.log("gauri");
            // let actual_data = JSON.stringify(this);
            let signup_data = (this);
             try{
-       
+                if(this.zipcode.length >=5 ){
+                    // let  data = await res.json();
+                    localStorage.setItem('signup_data',JSON.stringify(signup_data ," signup_data " ) );
+                    alert(`${this.username} Signup successssfully !!`);
+                    window.location="topoffer.html";
+                }else{
+                    alert(`${this.username} Enter valid zipcode`);
+                }
 
        // let  data = await res.json();
        localStorage.setItem('signup_data',JSON.stringify(signup_data ," signup_data " ) );
        // let data = JSON.parse(localStorage.getItem('login_data'));
       
            // console.log('data',data);
-            alert('${username} Signup successssfully !!');
-            window.location="index.html";
-           
-
         }catch(err){
             console.log('err!',err);
         }
@@ -75,7 +78,7 @@ const last_name = document.getElementById('last_name').value;
 const username = document.getElementById('username').value;
 const email = document.getElementById('email').value;
 const password=document.getElementById('password').value;
-
-u1.signup(name,last_name,username,email,password);
+const zipcode=document.getElementById('zipcode').value;
+u1.signup(zipcode,name,last_name,username,email,password);
 }
 

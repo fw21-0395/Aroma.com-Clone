@@ -1,6 +1,6 @@
-// import {nav_part} from "./nav_part.js";
-// let navbar_div = document.getElementById('nav_part');
-// navbar_div.innerHTML=nav_part();
+ import {navbar} from "../components/navbar.js";
+let navbar_div = document.getElementById('navbar');
+ navbar_div.innerHTML=navbar();
 
 
 
