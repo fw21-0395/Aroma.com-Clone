@@ -1,3 +1,9 @@
+
+//admin username and password
+Neeraj , aroma_12345
+
+
+
 //signup:
 https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/on/demandware.static/Sites-BathAndBodyWorks-Site/-/default/dwa626f986/images/svg-icons/UI-MyAccount.svg?yocs=o_s_
 
@@ -27,3 +33,8 @@ https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~
 
 //signup_page 2 img
 https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dw0f47b7b9/images/loyalty/boc-launch-prospects_lacb_0.jpg?yocs=s_
+
+
+
+//order 
+https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dw290ae529/images/banners/order-status-banner-asset_d.svg?yocs=s_
