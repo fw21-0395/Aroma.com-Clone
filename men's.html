@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>men,s page</title>
-    <link rel="stylesheet" href="men's.css">
 </head>
 <body>
     <div id="men_main">
@@ -20,12 +19,40 @@
         </div>
         <div id="men_product">
             <div>
+                <ul id="men_promo">
+                </ul>
                 <h1>Men's Fragrance, Body Care & More</h1>
                 <div id="men_filter">
                     <h2>filter by :-</h2>
-                    <button onclick="lowToHigh()" id="men_lh">Price low to high</button>
-                    <button onclick="highToLow()" id="men_hl">Price high to low</button>
-                    <button>Fragrance name</button>
+                    <select id="men_product_type" onchange="product_type()">
+                        <option value="0">PRODUCT TYPE</option>
+                        <option value="1">Body wash</option>
+                        <option value="2">Moisturizers</option>
+                        <option value="3">Body Spray</option>
+                        <option value="4">Fragrance</option>
+                        <option value="5">Hand Soaps</option>
+                    </select>
+                    <select id="men_fragrance_name" onchange="fragrance_name()">
+                        <option value="0">FRAGRANCE NAME</option>
+                        <option value="1">After Dark</option>
+                        <option value="2">Black Tie</option>
+                        <option value="3">Marble</option>
+                        <option value="4">Noir</option>
+                        <option value="5">Ocean</option>
+                        <option value="6">Teakwood</option>
+                    </select>
+                    <select id="men_fragrance_category" onchange="fragrance_category()">
+                        <option value="0">FRAGRANCE CATEGORY</option>
+                        <option value="1">Fresh</option>
+                        <option value="2">Sweets</option>
+                        <option value="3">Fruits</option>
+                        <option value="4">Woody</option>
+                    </select>
+                    <select id="men_sort_by" onchange="sortby()">
+                        <option value="0">SORT BY</option>
+                        <option value="1">Price low to high</option>
+                        <option value="2">Price high to low</option>
+                    </select>
                 </div>
             </div>
             <div id="men_container"></div>

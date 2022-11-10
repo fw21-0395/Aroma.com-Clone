@@ -33,6 +33,8 @@
     justify-content: space-between;
     align-items: center;
     margin: 10px 0px;
+    padding: 10px;
+    background-color: #f2f2f2;
 }
 #men_container{
     border: 0px dotted blue;
@@ -58,4 +60,28 @@
     cursor: pointer;
     background-color: whitesmoke;
     color: black;
+}
+select{
+    border: none;
+    border-bottom: 3px solid #333333;
+    background-color: #f2f2f2;
+}
+#men_promo{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: auto;
+    gap: 10px;
+    text-align: center;
+}
+#men_promo >div:hover{
+    border: 0px solid;
+    background-color: #333333;
+    color: white;
+    cursor: pointer;
+}
+#men_promo >div >img{
+    border: 0px solid;
+    margin-top: 5px;
+    width: 96%;
+    height: 200px;
 }
