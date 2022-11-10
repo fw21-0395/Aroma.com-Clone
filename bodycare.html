@@ -51,10 +51,13 @@
             text-align: center;
         }
         #men_container >div >img{
-            border: 1px dotted blue;
-            width: 250px;
-            height: 400px;
+            
+            width: 120px;
+            height: 300px;
+
         }
+       
+        
     </style>
 </head>
 <body>
@@ -75,14 +78,7 @@
                     <h2>filter by :-</h2>
                     <button onclick="lowToHigh()" id="men_lh">Price low to high</button>
                     <button onclick="highToLow()" id="men_hl">Price high to low</button>
-                    <button onclick="fragrance()">Fragrance name
-                    <!-- <select name="" id="">
-                        <option value="a1"></option>
-                        <option value="b1"></option>
-                        <option value="c1"></option>
-                        <option value="d2"></option>
-                    </select> -->
-                    </button>
+                    <button onclick="fragrancename()">Fragrance name</button>
                 </div>
             </div>
             <div id="men_container"></div>
@@ -169,7 +165,7 @@ data = [
     },
     {   
         id : 9,
-        image : "https://www.bathandbodyworks.com/p/winter-candy-apple-ultimate-hydration-body-cream-026539030.html?cgid=body-care",
+        image : "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw3f77a6bb/hires/026539030.jpg?sh=471&yocs=s_", 
         currentstatus : "New!",
         name : "Winter Candy Apple",
         text : "Ultimate Hydration Body Cream",
@@ -206,7 +202,7 @@ data = [
         details : "Body Wash",
     },{   
         id : 13,
-        image : "Bright Christmas Morning",
+        image : "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw9518a9fe/crop/026501186_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=s_",
         currentstatus : "New!",
         name : "Winter Candy Apple",
         text : "Fine Fragrance Mist",
@@ -224,7 +220,7 @@ data = [
         details : "Body Cream",
     },{   
         id : 15,
-        image : "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw9285085c/crop/026557566_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=s_",
+        image : "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw2ccda9c5/crop/026539025_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=s_",  
         currentstatus : "New!",
         name : "Winterberry Wonder",
         text : "Shower Gel",
@@ -233,7 +229,7 @@ data = [
         details : "Body Wash",
     },{   
         id : 16,
-        image : "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwc82289e5/hires/026569107_alt_1.jpg?sh=413&yocs=s_",
+        image : "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwc5134ea6/crop/026395536_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=s_",
         currentstatus : "New!",
         name : "Vanilla Mocha MArtini",
         text : "Fine Fragrance Mist",
@@ -244,773 +240,120 @@ data = [
         id : 17,
         image : "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw6c3d8902/crop/026553500_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=s_",
         currentstatus : "Online Exclusive",
-        name : "Winter Candy Apple",
+        name : "Classic Flannel",
         text : "3-in-1 Hair, Face & Face & Body Wash",
         price : 14.50,
         extratext : "Mix & match Full-Size: Buy 3, Get 1 FREE",  
-        details : "Body Spray",
-    },{   
-        id : 9,
-        image : "Winter Candy Apple",
+        details : "Body Wash",
+    },
+    {   
+        id : 18,
+        image : "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw317a404a/crop/026565998_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=s_",
         currentstatus : "New!",
-        name : "Winter Candy Apple",
-        text : "Body Spray",
-        price : 14.50,
+        name : "Bright Christmas Morning",
+        text : "Ultimate Hydration Body Cream",
+        price : 16.50,
         extratext : "Mix & match Full-Size: Buy 3, Get 1 FREE",  
-        details : "Body Spray",
-    },{   
-        id : 9,
-        image : "Winter Candy Apple",
+        details : "Body Cream",
+    },
+    {   
+        id : 19,
+        image : "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw50d79ae1/crop/026539026_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=s_", 
         currentstatus : "New!",
         name : "Winter Candy Apple",
-        text : "Body Spray",
-        price : 14.50,
-        extratext : "Mix & match Full-Size: Buy 3, Get 1 FREE",  
-        details : "Body Spray",
-    },{   
-        id : 9,
-        image : "Winter Candy Apple",
-        currentstatus : "New!",
-        name : "Winter Candy Apple",
-        text : "Body Spray",
-        price : 14.50,
-        extratext : "Mix & match Full-Size: Buy 3, Get 1 FREE",  
-        details : "Body Spray",
-    },{   
-        id : 9,
-        image : "Winter Candy Apple",
-        currentstatus : "New!",
-        name : "Winter Candy Apple",
-        text : "Body Spray",
-        price : 14.50,
-        extratext : "Mix & match Full-Size: Buy 3, Get 1 FREE",  
-        details : "Body Spray",
-    },{   
-        id : 9,
-        image : "Winter Candy Apple",
-        currentstatus : "New!",
-        name : "Winter Candy Apple",
-        text : "Body Spray",
-        price : 14.50,
-        extratext : "Mix & match Full-Size: Buy 3, Get 1 FREE",  
-        details : "Body Spray",
-    },{   
-        id : 9,
-        image : "Winter Candy Apple",
-        currentstatus : "New!",
-        name : "Winter Candy Apple",
-        text : "Body Spray",
-        price : 14.50,
-        extratext : "Mix & match Full-Size: Buy 3, Get 1 FREE",  
-        details : "Body Spray",
-    },{   
-        id : 9,
-        image : "Winter Candy Apple",
-        currentstatus : "New!",
-        name : "Winter Candy Apple",
-        text : "Body Spray",
-        price : 14.50,
-        extratext : "Mix & match Full-Size: Buy 3, Get 1 FREE",  
-        details : "Body Spray",
-    },{   
-        id : 9,
-        image : "Winter Candy Apple",
-        currentstatus : "New!",
-        name : "Winter Candy Apple",
-        text : "Body Spray",
-        price : 14.50,
-        extratext : "Mix & match Full-Size: Buy 3, Get 1 FREE",  
-        details : "Body Spray",
-    },{   
-        id : 9,
-        image : "Winter Candy Apple",
-        currentstatus : "New!",
-        name : "Winter Candy Apple",
-        text : "Body Spray",
-        price : 14.50,
-        extratext : "Mix & match Full-Size: Buy 3, Get 1 FREE",  
-        details : "Body Spray",
-    },{   
-        id : 9,
-        image : "Winter Candy Apple",
-        currentstatus : "New!",
-        name : "Winter Candy Apple",
-        text : "Body Spray",
-        price : 14.50,
-        extratext : "Mix & match Full-Size: Buy 3, Get 1 FREE",  
-        details : "Body Spray",
-    },{   
-        id : 9,
-        image : "Winter Candy Apple",
-        currentstatus : "New!",
-        name : "Winter Candy Apple",
-        text : "Body Spray",
-        price : 14.50,
-        extratext : "Mix & match Full-Size: Buy 3, Get 1 FREE",  
-        details : "Body Spray",
-    },{   
-        id : 9,
-        image : "Winter Candy Apple",
-        currentstatus : "New!",
-        name : "Winter Candy Apple",
-        text : "Body Spray",
-        price : 14.50,
-        extratext : "Mix & match Full-Size: Buy 3, Get 1 FREE",  
-        details : "Body Spray",
-    },{   
-        id : 9,
-        image : "Winter Candy Apple",
-        currentstatus : "New!",
-        name : "Winter Candy Apple",
-        text : "Body Spray",
-        price : 14.50,
-        extratext : "Mix & match Full-Size: Buy 3, Get 1 FREE",  
-        details : "Body Spray",
-    },{   
-        id : 9,
-        image : "Winter Candy Apple",
-        currentstatus : "New!",
-        name : "Winter Candy Apple",
-        text : "Body Spray",
-        price : 14.50,
-        extratext : "Mix & match Full-Size: Buy 3, Get 1 FREE",  
-        details : "Body Spray",
-    },{   
-        id : 9,
-        image : "Winter Candy Apple",
-        currentstatus : "New!",
-        name : "Winter Candy Apple",
-        text : "Body Spray",
-        price : 14.50,
-        extratext : "Mix & match Full-Size: Buy 3, Get 1 FREE",  
-        details : "Body Spray",
-    },{   
-        id : 9,
-        image : "Winter Candy Apple",
-        currentstatus : "New!",
-        name : "Winter Candy Apple",
-        text : "Body Spray",
-        price : 14.50,
-        extratext : "Mix & match Full-Size: Buy 3, Get 1 FREE",  
-        details : "Body Spray",
-    },{   
-        id : 9,
-        image : "Winter Candy Apple",
-        currentstatus : "New!",
-        name : "Winter Candy Apple",
-        text : "Body Spray",
-        price : 14.50,
-        extratext : "Mix & match Full-Size: Buy 3, Get 1 FREE",  
-        details : "Body Spray",
-    },{   
-        id : 9,
-        image : "Winter Candy Apple",
-        currentstatus : "New!",
-        name : "Winter Candy Apple",
-        text : "Body Spray",
-        price : 14.50,
-        extratext : "Mix & match Full-Size: Buy 3, Get 1 FREE",  
-        details : "Body Spray",
-    },{   
-        id : 9,
-        image : "Winter Candy Apple",
-        currentstatus : "New!",
-        name : "Winter Candy Apple",
-        text : "Body Spray",
-        price : 14.50,
-        extratext : "Mix & match Full-Size: Buy 3, Get 1 FREE",  
-        details : "Body Spray",
-    },{   
-        id : 9,
-        image : "Winter Candy Apple",
-        currentstatus : "New!",
-        name : "Winter Candy Apple",
-        text : "Body Spray",
-        price : 14.50,
-        extratext : "Mix & match Full-Size: Buy 3, Get 1 FREE",  
-        details : "Body Spray",
-    },{   
-        id : 9,
-        image : "Winter Candy Apple",
-        currentstatus : "New!",
-        name : "Winter Candy Apple",
-        text : "Body Spray",
-        price : 14.50,
-        extratext : "Mix & match Full-Size: Buy 3, Get 1 FREE",  
-        details : "Body Spray",
-    },{   
-        id : 9,
-        image : "Winter Candy Apple",
-        currentstatus : "New!",
-        name : "Winter Candy Apple",
-        text : "Body Spray",
-        price : 14.50,
-        extratext : "Mix & match Full-Size: Buy 3, Get 1 FREE",  
-        details : "Body Spray",
-    },{   
-        id : 9,
-        image : "Winter Candy Apple",
-        currentstatus : "New!",
-        name : "Winter Candy Apple",
-        text : "Body Spray",
-        price : 14.50,
-        extratext : "Mix & match Full-Size: Buy 3, Get 1 FREE",  
-        details : "Body Spray",
-    },{   
-        id : 9,
-        image : "Winter Candy Apple",
-        currentstatus : "New!",
-        name : "Winter Candy Apple",
-        text : "Body Spray",
-        price : 14.50,
-        extratext : "Mix & match Full-Size: Buy 3, Get 1 FREE",  
-        details : "Body Spray",
-    },{   
-        id : 9,
-        image : "Winter Candy Apple",
-        currentstatus : "New!",
-        name : "Winter Candy Apple",
-        text : "Body Spray",
-        price : 14.50,
-        extratext : "Mix & match Full-Size: Buy 3, Get 1 FREE",  
-        details : "Body Spray",
-    },{   
-        id : 9,
-        image : "Winter Candy Apple",
-        currentstatus : "New!",
-        name : "Winter Candy Apple",
-        text : "Body Spray",
-        price : 14.50,
-        extratext : "Mix & match Full-Size: Buy 3, Get 1 FREE",  
-        details : "Body Spray",
-    },{   
-        id : 9,
-        image : "Winter Candy Apple",
-        currentstatus : "New!",
-        name : "Winter Candy Apple",
-        text : "Body Spray",
-        price : 14.50,
-        extratext : "Mix & match Full-Size: Buy 3, Get 1 FREE",  
-        details : "Body Spray",
-    },{   
-        id : 9,
-        image : "Winter Candy Apple",
-        currentstatus : "New!",
-        name : "Winter Candy Apple",
-        text : "Body Spray",
-        price : 14.50,
-        extratext : "Mix & match Full-Size: Buy 3, Get 1 FREE",  
-        details : "Body Spray",
-    },{   
-        id : 9,
-        image : "Winter Candy Apple",
-        currentstatus : "New!",
-        name : "Winter Candy Apple",
-        text : "Body Spray",
-        price : 14.50,
-        extratext : "Mix & match Full-Size: Buy 3, Get 1 FREE",  
-        details : "Body Spray",
-    },{   
-        id : 9,
-        image : "Winter Candy Apple",
-        currentstatus : "New!",
-        name : "Winter Candy Apple",
-        text : "Body Spray",
-        price : 14.50,
-        extratext : "Mix & match Full-Size: Buy 3, Get 1 FREE",  
-        details : "Body Spray",
-    },{   
-        id : 9,
-        image : "Winter Candy Apple",
-        currentstatus : "New!",
-        name : "Winter Candy Apple",
-        text : "Body Spray",
-        price : 14.50,
-        extratext : "Mix & match Full-Size: Buy 3, Get 1 FREE",  
-        details : "Body Spray",
-    },{   
-        id : 9,
-        image : "Winter Candy Apple",
-        currentstatus : "New!",
-        name : "Winter Candy Apple",
-        text : "Body Spray",
-        price : 14.50,
-        extratext : "Mix & match Full-Size: Buy 3, Get 1 FREE",  
-        details : "Body Spray",
-    },{   
-        id : 9,
-        image : "Winter Candy Apple",
-        currentstatus : "New!",
-        name : "Winter Candy Apple",
-        text : "Body Spray",
-        price : 14.50,
-        extratext : "Mix & match Full-Size: Buy 3, Get 1 FREE",  
-        details : "Body Spray",
-    },{   
-        id : 9,
-        image : "Winter Candy Apple",
-        currentstatus : "New!",
-        name : "Winter Candy Apple",
-        text : "Body Spray",
-        price : 14.50,
-        extratext : "Mix & match Full-Size: Buy 3, Get 1 FREE",  
-        details : "Body Spray",
-    },{   
-        id : 9,
-        image : "Winter Candy Apple",
-        currentstatus : "New!",
-        name : "Winter Candy Apple",
-        text : "Body Spray",
-        price : 14.50,
-        extratext : "Mix & match Full-Size: Buy 3, Get 1 FREE",  
-        details : "Body Spray",
-    },{   
-        id : 9,
-        image : "Winter Candy Apple",
-        currentstatus : "New!",
-        name : "Winter Candy Apple",
-        text : "Body Spray",
-        price : 14.50,
+        text : "Fine Fragrance",
+        price : 16.50,
         extratext : "Mix & match Full-Size: Buy 3, Get 1 FREE",  
         details : "Body Spray",
     },
     {   
-        id : 8,
-        image : "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw67bdae98/crop/026398463_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_",
-        currentstatus : "New!",
-        name : "Black Tie",
-        text : "Body Spray",
-        price : 14.50,
-        extratext : "Mix & match Full-Size: Buy 3, Get 1 FREE",  
-        details : "Body Spray",
-    },{   
-        id : 8,
-        image : "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw67bdae98/crop/026398463_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_",
-        currentstatus : "New!",
-        name : "Black Tie",
-        text : "Body Spray",
-        price : 14.50,
-        extratext : "Mix & match Full-Size: Buy 3, Get 1 FREE",  
-        details : "Body Spray",
-    },{   
-        id : 8,
-        image : "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw67bdae98/crop/026398463_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_",
-        currentstatus : "New!",
-        name : "Black Tie",
-        text : "Body Spray",
-        price : 14.50,
-        extratext : "Mix & match Full-Size: Buy 3, Get 1 FREE",  
-        details : "Body Spray",
-    },{   
-        id : 8,
-        image : "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw67bdae98/crop/026398463_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_",
-        currentstatus : "New!",
-        name : "Black Tie",
-        text : "Body Spray",
-        price : 14.50,
-        extratext : "Mix & match Full-Size: Buy 3, Get 1 FREE",  
-        details : "Body Spray",
-    },{   
-        id : 8,
-        image : "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw67bdae98/crop/026398463_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_",
-        currentstatus : "New!",
-        name : "Black Tie",
-        text : "Body Spray",
-        price : 14.50,
-        extratext : "Mix & match Full-Size: Buy 3, Get 1 FREE",  
-        details : "Body Spray",
-    },{   
-        id : 8,
-        image : "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw67bdae98/crop/026398463_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_",
-        currentstatus : "New!",
-        name : "Black Tie",
-        text : "Body Spray",
-        price : 14.50,
-        extratext : "Mix & match Full-Size: Buy 3, Get 1 FREE",  
-        details : "Body Spray",
-    },{   
-        id : 8,
-        image : "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw67bdae98/crop/026398463_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_",
-        currentstatus : "New!",
-        name : "Black Tie",
-        text : "Body Spray",
-        price : 14.50,
-        extratext : "Mix & match Full-Size: Buy 3, Get 1 FREE",  
-        details : "Body Spray",
-    },{   
-        id : 8,
-        image : "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw67bdae98/crop/026398463_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_",
-        currentstatus : "New!",
-        name : "Black Tie",
-        text : "Body Spray",
-        price : 14.50,
-        extratext : "Mix & match Full-Size: Buy 3, Get 1 FREE",  
-        details : "Body Spray",
-    },{   
-        id : 8,
-        image : "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw67bdae98/crop/026398463_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_",
-        currentstatus : "New!",
-        name : "Black Tie",
-        text : "Body Spray",
-        price : 14.50,
-        extratext : "Mix & match Full-Size: Buy 3, Get 1 FREE",  
-        details : "Body Spray",
-    },{   
-        id : 8,
-        image : "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw67bdae98/crop/026398463_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_",
-        currentstatus : "New!",
-        name : "Black Tie",
-        text : "Body Spray",
-        price : 14.50,
-        extratext : "Mix & match Full-Size: Buy 3, Get 1 FREE",  
-        details : "Body Spray",
-    },{   
-        id : 8,
-        image : "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw67bdae98/crop/026398463_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_",
-        currentstatus : "New!",
-        name : "Black Tie",
-        text : "Body Spray",
-        price : 14.50,
-        extratext : "Mix & match Full-Size: Buy 3, Get 1 FREE",  
-        details : "Body Spray",
-    },{   
-        id : 8,
-        image : "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw67bdae98/crop/026398463_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_",
-        currentstatus : "New!",
-        name : "Black Tie",
-        text : "Body Spray",
-        price : 14.50,
-        extratext : "Mix & match Full-Size: Buy 3, Get 1 FREE",  
-        details : "Body Spray",
-    },{   
-        id : 8,
-        image : "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw67bdae98/crop/026398463_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_",
-        currentstatus : "New!",
-        name : "Black Tie",
-        text : "Body Spray",
-        price : 14.50,
-        extratext : "Mix & match Full-Size: Buy 3, Get 1 FREE",  
-        details : "Body Spray",
-    },{   
-        id : 8,
-        image : "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw67bdae98/crop/026398463_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_",
-        currentstatus : "New!",
-        name : "Black Tie",
-        text : "Body Spray",
-        price : 14.50,
-        extratext : "Mix & match Full-Size: Buy 3, Get 1 FREE",  
-        details : "Body Spray",
-    },{   
-        id : 8,
-        image : "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw67bdae98/crop/026398463_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_",
-        currentstatus : "New!",
-        name : "Black Tie",
-        text : "Body Spray",
-        price : 14.50,
-        extratext : "Mix & match Full-Size: Buy 3, Get 1 FREE",  
-        details : "Body Spray",
-    },{   
-        id : 8,
-        image : "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw67bdae98/crop/026398463_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_",
-        currentstatus : "New!",
-        name : "Black Tie",
-        text : "Body Spray",
-        price : 14.50,
-        extratext : "Mix & match Full-Size: Buy 3, Get 1 FREE",  
-        details : "Body Spray",
-    },{   
-        id : 8,
-        image : "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw67bdae98/crop/026398463_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_",
-        currentstatus : "New!",
-        name : "Black Tie",
-        text : "Body Spray",
-        price : 14.50,
-        extratext : "Mix & match Full-Size: Buy 3, Get 1 FREE",  
-        details : "Body Spray",
-    },{   
-        id : 8,
-        image : "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw67bdae98/crop/026398463_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_",
-        currentstatus : "New!",
-        name : "Black Tie",
-        text : "Body Spray",
-        price : 14.50,
-        extratext : "Mix & match Full-Size: Buy 3, Get 1 FREE",  
-        details : "Body Spray",
-    },{   
-        id : 8,
-        image : "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw67bdae98/crop/026398463_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_",
-        currentstatus : "New!",
-        name : "Black Tie",
-        text : "Body Spray",
-        price : 14.50,
-        extratext : "Mix & match Full-Size: Buy 3, Get 1 FREE",  
-        details : "Body Spray",
-    },
-    {
-        id : 2,
-        name : "Black Tie",
-        details : "Wallflower Fragrance Refill",
-        price : 7.50,
-        image : "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw68829434/crop/026587279_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_"
-    },
-    {
-        id : 3,
-        name : "Cedar & Suede",
-        details : "3-wick Candle",
-        price : 29.50,
-        image : "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwc446faf6/crop/026588538_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_"
-    },
-    {
-        id : 4,
-        name : "Birch & Eucalyptus",
-        details : "Ultimate Hydration Body Cream",
-        price : 16.50,
-        image : "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw788dbf70/crop/026501180_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_"
-    },
-    {
-        id : 5,
-        name : "Black Tie",
-        details : "Gentle Foaming Hand Soap",
-        price : 7.50,
-        image : "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwc1518184/crop/026438827_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_"
-    },
-    {
-        id : 6,
-        name : "After Dark",
-        details : "3-wick Candle",
-        price : "26.50",
-        image : "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwb2ea9f52/crop/026617880_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_"
-    },
-    {
-        id : 7,
-        name : "Classic Flannel",
-        details : "Body Spray",
-        price : 14.50,
-        image : "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwcf9d3d94/crop/026553504_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_"
-    },
-    {
-        id : 8,
-        name : "Mahogany Teakwood",
-        details : "Wallflower Fragrance Refill",
-        price : 7.50,
-        image : "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw9bdbdc19/crop/026413481_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_"
-    },
-    {
-        id : 9,
-        name : "Flannel",
-        details : "Concentrated Room Spray",
-        price : 8.50,
-        image : "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwe8387708/crop/026534930_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_"
-    },
-    {
-        id : 10,
-        name : "Bourbon",
-        details : "Ultimate Hydration Body Cream",
-        price : 16.50,
-        image : "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwef08bb2c/crop/026552804_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_"
-    },
-    {
-        id : 11,
-        name : "Vintage",
-        details : "Gentle Foaming Hand Soap",
-        price : 7.50,
-        image : "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw41ccd312/crop/026438828_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_"
-    },
-    {
-        id : 12,
-        name : "Flannel",
-        details : "3-wick Candle",
-        price : 26.50,
-        image : "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwe53c7f6b/crop/026579255_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_"
-    },
-    {
-        id : 13,
-        name : "Mahogany Teakwood",
-        details : "Single Wick Candle",
-        price : 6.50,
-        image : "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwdfe0df3d/crop/026437376_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_"
-    },
-    {
-        id : 14,
-        name : "Noir",
-        details : "Body Spray",
-        price : 14.50,
-        image : "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw459dddc8/crop/026311429_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_"
-    },
-    {
-        id : 15,
-        name : "Smoked Vanilla Whiskey",
-        details : "3-wick Candle",
-        price : 26.50,
-        image : "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwbed84473/crop/026587313_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_"
-    },
-    {
-        id : 16,
-        name : "Graphite",
-        details : "Gentle Foaming Hand Soap",
-        price : 7.50,
-        image : "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwfd5ceb7e/crop/026438824_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_"
-    },
-    {
-        id : 17,
-        name : "Smoked Old Fashioned",
-        details : "Body Spray",
-        price : 14.50,
-        image : "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwdfe3b194/crop/026551686_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_"
-    },
-    {
-        id : 18,
-        name : "Freshwater",
-        details : "Wallflower Fragrance Refill",
-        price : 7.50,
-        image : "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwd11e9755/crop/026466941_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_"
-    },
-    {
-        id : 19,
-        name : "Whiskey Reserve",
-        details : "Body Wash",
-        price : 15.50,
-        image : "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwc05d9d02/crop/026551691_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_"
-    },
-    {
         id : 20,
-        name : "Mahogany Teakwood",
-        details : "Moisturing Hand Sanitizer",
-        price : 7.50,
-        image : "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw4ad90c06/crop/026412332_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_"
+        image : "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw775183ba/crop/026553691_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=s_",
+        currentstatus : "New Fragrance",
+        name : "Rainbow Swirl Candy",
+        text : "Travel Size Ultimate Hydration Body Cream",
+        price : 8.50,
+        extratext : "Mix & match Full-Size: Buy 3, Get 1 FREE",  
+        details : "Body Cream",
     },
+    
 ];
-let body = document.getElementById("men_container");
-// console.log(data);
-let count=0,rount=0,mount=0;
-function lowToHigh(){
-    count++;
-    // console.log(data);
-    data.sort(function(a,b){
-        return a.price-b.price;
-    });
-    console.log(data);
-    body.innerHTML = null;
-    data.forEach(function (el,id){
-        let tr = document.createElement('div');
-
-    let td1 = document.createElement('img');
-    td1.src = el.image;
-
-    let td2 = document.createElement('h3');
-    td2.innerHTML = el.name;
-
-    let td3 = document.createElement('p');
-    td3.innerHTML = el.details;
-
-    let td4 = document.createElement('p');
-    td4.innerHTML = `$${el.price}`;
-
-    let td5 = document.createElement('button');
-    td5.textContent = "Add To Card";
-
-    tr.append(td1,td1,td2,td3,td4,td5);
-    body.append(tr);
-
-    })
-}
-
-// function fragrance(){
-//    mount++;
-//    console.log(data);
-//    data.forEach(function(el,id){
-//     if(el.name){
-//         let tr = document.createElement('div');
-
-// let td1 = document.createElement('img');
-// td1.src = el.image;
-
-// let td2 = document.createElement('h3');
-// td2.innerHTML = el.name;
-
-// let td3 = document.createElement('p');
-// td3.innerHTML = el.details;
-
-// let td4 = document.createElement('p');
-// td4.innerHTML = `$${el.price}`;
-
-// let td5 = document.createElement('button');
-// td5.textContent = "Add To Card";
-
-// tr.append(td1,td1,td2,td3,td4,td5);
-// body.append(tr);
-//     }
-//    })
-// }
 
 
 
-function highToLow(){
-    rount++;
-    // console.log(data);
-    data.sort(function(a,b){
-        return b.price-a.price;
-    });
-    console.log(data);
-    body.innerHTML = null;
-    data.forEach(function (el,id){
-        let tr = document.createElement('div');
-
-    let td1 = document.createElement('img');
-    td1.src = el.image;
-
-    let td2 = document.createElement('h3');
-    td2.innerHTML = el.name;
-
-    let td3 = document.createElement('p');
-    td3.innerHTML = el.details;
-
-    let td4 = document.createElement('p');
-    td4.innerHTML = `$${el.price}`;
-
-    let td5 = document.createElement('button');
-    td5.textContent = "Add To Card";
-
-    tr.append(td1,td1,td2,td3,td4,td5);
-    body.append(tr);
-
-    })
-}
-
-if(count<1 && rount<1){
-    function append(products) {
+ let body = document.getElementById("men_container");
+  function append(products) {
   body.innerHTML = null
 
   products.forEach(function (el, id) {
 
     let tr = document.createElement('div');
+    
+   
+
 
     let td1 = document.createElement('img');
     td1.src = el.image;
 
-    let td2 = document.createElement('h3');
-    td2.innerHTML = el.name;
+    let td2 = document.createElement('p');
+    td2.src = el.currentstatus;
 
-    let td3 = document.createElement('p');
-    td3.innerHTML = el.details;
+    let td3 = document.createElement('h3');
+    td3.innerHTML = el.name;
 
     let td4 = document.createElement('p');
-    td4.innerHTML = `$${el.price}`;
+    td4.innerHTML = el.text;
 
-    let td5 = document.createElement('button');
-    td5.textContent = "Add To Card";
+    let td5 = document.createElement('p');
+    td5.innerHTML = `$${el.price}`;
+
+    let td6 = document.createElement('p');
+    td6.innerHTML = el.extratext;
+
+    let td7 = document.createElement('button');
+    td7.textContent = "Add To Card";
+
     td5.addEventListener('click', function () {
       remove(id)
     })
-    tr.append(td1,td1,td2,td3,td4,td5);
+    tr.append(td1,td1,td2,td3,td4,td5,td6,td7);
     body.append(tr)
   })
 }
 
-append(data)
+append(data);
+
+function lowToHigh(){
+    body.innerHTML = null;
+    data.sort(function(a,b){
+        return a.price-b.price;
+    });
+    append(data);
+    console.log(data);
 }
- 
- 
+
+
+function fragrancename(){
+    body.innerHTML = null;
+    let arr=[];
+    data.forEach(function(e){
+        if(e.details=="Body Spray"){
+         arr.push(e);
+        }
+        append(arr); 
+    })
+    
+    console.log(data);
+}
+
+function highToLow(){
+    data.sort(function(a,b){
+        return b.price-a.price;
+    });
+    append(data);
+    console.log(data);
+}
+
 
 </script>
 </html>
