@@ -1,5 +1,5 @@
-const navbar=()=>{
-    let navbar= `  
+const nav_part=()=>{
+    let nav_part= `  
 
             <div id="logoff">
             <div >
@@ -54,6 +54,6 @@ const navbar=()=>{
  
  
 `;
-    return navbar;
+    return nav_part;
     };
-    export{navbar}
+    export{nav_part}

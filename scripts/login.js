@@ -1,6 +1,6 @@
-import {navbar} from "./navbar.js";
-let navbar_div = document.getElementById('navbar');
-navbar_div.innerHTML=navbar();
+import {nav_part} from "./nav_part.js";
+let navbar_div = document.getElementById('nav_part');
+navbar_div.innerHTML=nav_part();
 
 
 
@@ -86,24 +86,3 @@ function usernameChange() {
 }
 
 usernameChange();
-
-
-
-
-
-
-
-
-/*document.querySelector("#open-popuptwo").addEventListener("click",()=>{
-   console.log("gb")
-   document.querySelector("#popuptwo").classList.add("active");
-   popuptwo.style.visibility="visible";
-})
-
-
-document.querySelector("#popuptwo #close-btntwo").addEventListener("click",()=>{
-   console.log("gbb")
-   document.querySelector("#popuptwo").classList.remove("active");
-   popuptwo.style.visibility="hidden";
-
-})*/
