@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles/cart.css">
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/login.css">
+</head>
+
+<body>
+    <div id="navbar"></div>
+    
+    <div>
+        <a id="back_to_shop" href="#"> <span><i class="fa-solid fa-arrow-left"></i></span> CONTINUE SHOPPING</a>
+    
+    
+        <div class="cart_page">
+            
+            <p class="shop_bag">SHOPPING BAG</p>
+            <hr>
+            <p>ITEMS IN SHOPPING BAG</p>
+            <div id="empty_bag">
+                <h1>BAG IS EMPTY!</h1>
+            </div>
+            <!-- cart_item_section -->
+            <div id="cart_product_div">
+
+                <div class="rowgroup">
+                    <div id="row" class="cart-line-items-headings">
+                        <div class="section-header item"><h4>ITEM</h4></div>
+                        <div class="section-header header-price"><h4>PRICE</h4></div>
+                        <div class="section-header header-qty"><h4>QTY</h4></div>
+                        <div class="section-header header-total-price" ><h4>TOTAL PRICE</h4></div>
+                        <!-- <div class="section-header"><h4>Remove</h4></div> -->
+                    </div>
+                </div>
+                
+                <div class="rowgroup" id="cart_item_container">
+                    
+
+
+                    
+                </div>
+
+
+
+            </div>
+            <!-- cart_item_section -->
+
+            <!-- pro code & payment -->
+            <div id="bottom_part_cart">
+                <div class="pro_code">
+                    <h4>PROMOTION CODE</h4>
+                    <p>Only one code can be applied per order.</p>
+                    <input type="text" id="promo_code"><button id="APPLY">APPLY</button>
+                </div>
+
+                <div>
+                    <div class="order_total">
+                        <h3>ORDER TOTAL:</h3> <h3 id="total_order_price"></h3>
+                    </div>
+                    <div>
+                        <button id="buy_product">PROCCED TO BUY</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="footer"></div>
+</body>
+</html>
+<script type="module" src="./scripts/cart.js"></script>
+<script type="module" src="./scripts/login.js"></script>
+<script type="module" src="./scripts/nav_part.js"></script>
+
