@@ -7,32 +7,56 @@
     <title>Admin Page</title>
 </head>
 <body>
-    <h1>Add Product</h1>
 
-    <!-- Add Product Section -->
-    <div id="add_products">
-
-        <input type="number" placeholder="Enter Product Id" id="product_id"> <br>
-
-        <input type="text" placeholder="Enter Image URL" id="product_image"> <br>
-
-        <input type="text" placeholder="Enter Badge Name" id="product_badge"> <br>
-
-        <input type="text" placeholder="Enter Product Name" id="product_name"> <br>
-
-        <input type="text" placeholder="Enter Product Type" id="product_type"> <br>
-        
-        <input type="number" placeholder="Enter Product Price" id="product_price"> <br>
-
-        <input type="number" placeholder="Enter Product Message" id="product_message"> <br>
-        
-        <button id="add_product"> Add Product </button>
-
-    </div>
-
-    
-    <!-- Display section -->
     <div id="container">
+
+            <!-- Add Product Section -->
+            <div id="add_section">
+
+                <h1>Add Product</h1>
+
+                <div id="add_products">
+
+                    <input type="number" placeholder="Enter Product Id" id="product_id"> <br>
+
+                    <input type="text" placeholder="Enter Image URL" id="product_image"> <br>
+
+                    <input type="text" placeholder="Enter Badge Name" id="product_badge"> <br>
+
+                    <input type="text" placeholder="Enter Product Name" id="product_name"> <br>
+
+                    <input type="text" placeholder="Enter Product Type" id="product_type"> <br>
+                    
+                    <input type="number" placeholder="Enter Product Price" id="product_price"> <br>
+
+                    <input type="text" placeholder="Enter Product Message" id="product_message"> <br>
+                    
+                    <button id="addTo_mensPage"> Add Product To Men's Page</button> <br>
+
+                    <button id="addTo_bodycarePage"> Add Product To Bodycare Page</button>
+                    
+                </div>
+
+                <!-- Delete Products -->
+                <div id="delete ">
+                </div>
+
+                <!-- Update Section -->
+                <div id="update">
+                </div>
+
+        </div>
+
+        
+        <!-- Display section -->
+        <h3>Products</h3>
+        <div id="admin_product_list">
+
+            <div id="admin_mens_products"></div>
+
+            <div id="admin_bodycare_products"></div>
+
+        </div>
 
     </div>
 
