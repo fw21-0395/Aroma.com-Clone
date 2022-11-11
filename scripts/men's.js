@@ -230,12 +230,13 @@ let promo = [
         name : "Mahogany Teakwood",
         photo : "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw99edc910/crop/026327825_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_"
     },
-];
+]
 //console.log(data)
 
   let  body = document.getElementById("men_container");
   function append(products) {
   body.innerHTML = null
+
   products.forEach(function (el, id){
 
     let tr = document.createElement('div');
@@ -254,20 +255,21 @@ let promo = [
 
     let td5 = document.createElement('button');
     td5.textContent = "Add To Card";
-    td5.addEventListener('click', function () {
-      addToCard(id)
-    })
+    td5.addEventListener("click", function(){
+        itembook(el);
+      })
     tr.append(td1,td2,td3,td4,td5);
     body.append(tr)
   })
+}append(data)
+
+function itembook(el){
+    let booked = JSON.parse(localStorage.getItem("Cart_List")) || [];
+    booked.push(el)
+    localStorage.setItem("Cart_list",JSON.stringify(booked));
 }
 
-function addToCard(id){
-}
-
-append(data)
-
-  let ul_body = document.getElementById("men_promo");
+let ul_body = document.getElementById("men_promo");
   function display(products) {
   ul_body.innerHTML = null
   products.forEach(function (el, id){
@@ -410,6 +412,7 @@ function fragrance_category(){
     })
     append(newdata)
   }
+  
 }
 
 function sortby(){
@@ -436,6 +439,7 @@ function sortby(){
     })
     append(data)
   }
+  
 }
 
 
