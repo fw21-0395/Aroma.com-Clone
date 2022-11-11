@@ -1,4 +1,18 @@
 
+import {navbar} from "../components/navbar.js";
+
+let navbarDiv = document.getElementById("navbar");
+
+navbarDiv.innerHTML = navbar();
+
+// footer section
+import { footer } from "../components/footer.js";
+let footer_div = document.getElementById('footer')
+footer_div.innerHTML = footer();
+// footer section
+
+// Mens Section
+//Cathing Mens Div
 let mens_div = document.getElementById("admin_mens_products");
 
 //Get Mens Products
@@ -15,6 +29,7 @@ const get_mens = async () => {
 
 get_mens();
 
+// Mens Append Function
 const append_mens = (container,data) => {
 
     container.innerHTML = ""
@@ -27,19 +42,19 @@ const append_mens = (container,data) => {
             card_image.src = el.image;
 
             let card_badge = document.createElement("p");
-            card_badge.innerText = el.badge;
+            card_badge.innerText = "Badge:" + el.badge;
 
             let card_name = document.createElement("p");
-            card_name.innerText = el.name;
+            card_name.innerText = "Name:" + el.name;
 
             let card_type = document.createElement("p");
-            card_type.innerText = el.type;
+            card_type.innerText = "Type:" + el.type;
 
             let card_price = document.createElement("p");
-            card_price.innerText = el.price;
+            card_price.innerText = "Price:" + "$" + el.price;
 
             let card_message = document.createElement("p");
-            card_message.innerText = el.message;
+            card_message.innerText = "Message:" + el.message;
 
             let card_update_btn = document.createElement("button");
             card_update_btn.innerText = "Update";
@@ -61,7 +76,9 @@ const append_mens = (container,data) => {
 
             }
 
-            card.append(card_image, card_badge, card_name, card_type, card_price, card_message, card_update_btn, card_delete_btn);
+            let hr = document.createElement("hr");
+
+            card.append(card_image, card_badge, card_name, card_type, card_price, card_message, card_update_btn, card_delete_btn, hr);
         
         container.append(card);
 
@@ -71,9 +88,8 @@ const append_mens = (container,data) => {
 }
 
 
-
-
-//Mens Page
+//Add to Mens Page section
+// catched add to Mens Button 
 let addTo_MensPage_btn = document.getElementById("addTo_mensPage");
 
 addTo_MensPage_btn.onclick = () => {
@@ -82,8 +98,9 @@ addTo_MensPage_btn.onclick = () => {
 
 }
 
+//Catched values from input and adding to server
 const addTo_MensPage = async () => {
-
+        
     let product_id = document.getElementById("product_id").value;
 
     let product_image = document.getElementById("product_image").value;
@@ -94,9 +111,15 @@ const addTo_MensPage = async () => {
 
     let product_type = document.getElementById("product_type").value;
 
-    let product_price = document.getElementById("product_price");
+    let product_price = document.getElementById("product_price").value;
 
-    let product_message = document.getElementById("product_message");
+    let product_message = document.getElementById("product_message").value;
+
+    if( product_id == "" || product_image == "" || product_name == "" || product_type == "" || product_price == ""){
+
+        alert("Please fill all the details");
+
+    }else {
 
     let send_this_data = {
 
@@ -128,6 +151,8 @@ const addTo_MensPage = async () => {
     console.log(data);
 
     get_mens();
+
+    }
 
 }
 
@@ -189,7 +214,8 @@ const addTo_MensPage = async () => {
     } 
 
 
-
+// Boducare Section 
+// Cathed bodycare div;
 let bodycare_div = document.getElementById("admin_bodycare_products");
 
 //Get Mens Products
@@ -200,7 +226,7 @@ const get_bodycare = async () => {
     let data = await response.json();
 
 
-    append_mens(bodycare_div,data);
+    append_bodycare(bodycare_div,data);
 
 }
 
@@ -218,19 +244,19 @@ const append_bodycare = (container,data) => {
             card_image.src = el.image;
 
             let card_badge = document.createElement("p");
-            card_badge.innerText = el.badge;
+            card_badge.innerText ="Badge:" + el.badge;
 
             let card_name = document.createElement("p");
-            card_name.innerText = el.name;
+            card_name.innerText ="Name:" + el.name;
 
             let card_type = document.createElement("p");
-            card_type.innerText = el.type;
+            card_type.innerText ="Type:" + el.type;
 
             let card_price = document.createElement("p");
-            card_price.innerText = el.price;
+            card_price.innerText = "Price:" + "$" + el.price;
 
             let card_message = document.createElement("p");
-            card_message.innerText = el.message;
+            card_message.innerText ="Message:" + el.message;
 
             let card_update_btn = document.createElement("button");
             card_update_btn.innerText = "Update";
@@ -252,7 +278,9 @@ const append_bodycare = (container,data) => {
 
             }
 
-            card.append(card_image, card_badge, card_name, card_type, card_price, card_message, card_update_btn, card_delete_btn);
+            let hr = document.createElement("hr");
+
+            card.append(card_image, card_badge, card_name, card_type, card_price, card_message, card_update_btn, card_delete_btn, hr);
         
         container.append(card);
 
@@ -281,9 +309,15 @@ const addTo_BodycarePage = async () => {
 
     let product_type = document.getElementById("product_type").value;
 
-    let product_price = document.getElementById("product_price");
+    let product_price = document.getElementById("product_price").value;
 
-    let product_message = document.getElementById("product_message");
+    let product_message = document.getElementById("product_message").value;
+
+    if( product_id == "" || product_image == "" || product_name == "" || product_type == "" || product_price == ""){
+
+        alert("Please fill all the details");
+
+    }else {
 
     let send_this_data = {
 
@@ -313,6 +347,10 @@ const addTo_BodycarePage = async () => {
     let data = await response.json();
 
     console.log(data);
+
+    get_bodycare();
+
+    }
     
 
 }
