@@ -1,9 +1,8 @@
-
+// navbar section
 import {navbar} from "../components/navbar.js";
-
 let navbarDiv = document.getElementById("navbar");
-
 navbarDiv.innerHTML = navbar();
+// navbar section
 
 // footer section
 import { footer } from "../components/footer.js";
