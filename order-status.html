@@ -4,11 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>order-status</title>
     <link rel="stylesheet" href="./styles/order-status.css">
+    
+    <link rel="stylesheet" href="./styles/navbar.css">
+     <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/login.css">
+     <link rel="stylesheet" href="./styles/footer.css">
+
 </head>
 <body>
+
+    <div id="navbar"></div>
        <!--Add the nav bar and import in order.js file and make type as module-->
+       <div id="home"><a href="./index.html">HOME</a> / ORDER STATUS </div>
+
     <div id="order">
         <div class="notification">
             <h4>My Bath & Body Works Rewards is now available nationwide! Join the VIPs</h4>
@@ -28,7 +38,7 @@
             <label >Billing ZIP Code</label>
             <input type="text" id="zipcode" placeholder="ZIP Code" />
             </form>
-            <button onclick="order()">CHECK STATUS</button>
+            <button id="order_dekho">CHECK STATUS</button>
             <hr>
         </div>
         </div>
@@ -41,7 +51,16 @@
 
 
     </div>
+    <div id="footer"></div>
 
+</body>
 
-</body><script src="./scripts/order-status.js"></script>
 </html>
+
+<script type="module" src="./scripts/order-status.js"></script>
+
+<script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script>
+
+<script type="module" src="./scripts/index.js"></script>
+
+<script type="module" src="./scripts/login.js"></script>
