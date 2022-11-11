@@ -5,6 +5,7 @@
 #men_main{
     border: 0px solid red;
     display: flex;
+    font-family: "Trade Gothic W01 Light", Arial, sans-serif;
 }
 #men_sort{
     border: 0px solid yellow;
