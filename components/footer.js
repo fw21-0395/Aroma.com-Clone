@@ -82,4 +82,4 @@ function footer(){
     </div>`
 }
 
-export { footer }
+export { footer };

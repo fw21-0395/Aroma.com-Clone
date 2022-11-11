@@ -49,10 +49,7 @@ function usernameChange() {
 
    document.getElementById("login").addEventListener("click",(event)=>{
        event.preventDefault()
-    
-      
-    
-      
+   
        class user {
        #checkUsername(username){return username.includes('#')? false : true;}
       

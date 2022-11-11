@@ -1,3 +1,7 @@
+
+#body{
+  margin: 5px;
+}
 #order{
     border: 0px solid salmon;
     display: grid;
@@ -14,7 +18,6 @@
   
 }
 
-
 #order_logo{
  height: 130px;
  width: 1000px;
@@ -26,7 +29,7 @@
     margin:20px;
 }
 
-form {
+#register-form >form {
    
     display: grid;
   width:auto;
@@ -36,7 +39,7 @@ form {
 }
 
 
-form > p{
+#register-form >form > p{
   font-family: Trade Gothic W01 Light,Arial,sans-serif;
   color: #333;
   text-transform: uppercase;
@@ -48,16 +51,16 @@ form > p{
   margin-left: 10px;
   margin-bottom: 6px;
   line-height: 1;
+  text-align: left;
 }
 
 span{
     color: black;
 }
 input,
-select,
 textarea {
-  width:500px;
-  padding: 15px;
+  width:auto;
+  
   border: 1px solid #ced1d6;
   
   box-sizing: border-box;
