@@ -1,7 +1,6 @@
 
-#body{
-  margin: 5px;
-}
+
+
 #order{
     border: 0px solid salmon;
     display: grid;
@@ -29,7 +28,7 @@
     margin:20px;
 }
 
-#register-form >form {
+#order-form  >form {
    
     display: grid;
   width:auto;
@@ -39,13 +38,13 @@
 }
 
 
-#register-form >form > p{
+#order-form  >form > p{
   font-family: Trade Gothic W01 Light,Arial,sans-serif;
   color: #333;
   text-transform: uppercase;
 }
 
- label {
+#order-form  label {
   color: black;
   font-size: 16px;
   margin-left: 10px;
@@ -54,15 +53,13 @@
   text-align: left;
 }
 
-span{
+#order span{
     color: black;
 }
-input,
+#order-form input,
 textarea {
   width:auto;
-  
   border: 1px solid #ced1d6;
-  
   box-sizing: border-box;
   margin: 6px 0px 5px 0px;
   resize: vertical;
@@ -70,11 +67,11 @@ textarea {
   
 }
 
-h4{
+#order h4{
   background-color: skyblue;
   color: darkblue;
 }
-button{
+#order-form  button{
   margin: auto;
   height: 40px;
   width:300px;
@@ -87,19 +84,19 @@ button{
  
   
 }
-button:hover{
+#order-form  button:hover{
   background-color: white;
   color: #333333;
   border:0.5px solid #ced1d6;
 }
 
-h1 {
+#order h1 {
   text-align: center;
   font-size: 40px;
   color: black;
  margin-top: 60px;
 }
-#span_div{
+#order #span_div{
   margin: 5px;
   display: grid;
 }
