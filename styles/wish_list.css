@@ -1,0 +1,94 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Trade Gothic W01 Light, Arial, sans-serif;
+}
+#wish_main >h1{
+    border-bottom: 1px solid #333333;
+    color: #333333;
+    width: 92%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+#wish_promo{
+    width: 90%;
+    padding: 10px;
+    border: 1px solid;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: auto;
+    gap: 10px;
+    text-align: center;
+}
+#wish_promo_product >h2{
+    width: 90%;
+    text-align: center;
+    margin: auto;
+    border: 0px solid red;
+}
+#wish_promo >div:hover{
+    border: 0px solid;
+    background-color: #333333;
+    color: white;
+    cursor: pointer;
+}
+#wish_promo >div >img{
+    border: 0px solid;
+    margin-top: 5px;
+    width: 96%;
+    height: 200px;
+}
+#wish_list_product{
+    border: 0px solid;
+    width: 92%;
+    margin:20px auto;
+}
+#wish_list_product >h2{
+    text-align: center;
+    padding: 5px;
+    background-color: #CFD8DC;
+    color: #333333;
+}
+#wish_list_head{
+    border: 0px solid red;
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+}
+#wish_list_head >div{
+    border: 0px solid red;
+    background-color: #CFD8DC;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#wish_list >div{
+    border: 0px solid red;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#wish_list >div:nth-child(even){
+    background-color: #ECEFF1;
+}
+#wish_list >div >img{
+    border: 0px solid red;
+    width: 100px;
+    height: 100px;
+}
+#wish_list >div >img +div{
+    text-align: center;
+}
+#wish_list >div >button{
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #CFD8DC;
+}
+#wish_list >div >button:hover{
+    color: #ECEFF1;
+    background-color: #333333;
+}
