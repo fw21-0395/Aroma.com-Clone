@@ -4,32 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/admin.css">
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/login.css">
     <title>Admin Page</title>
 </head>
 <body>
 
+    <div id="navbar"></div>
+
+    <h1>Admin Panel</h1>
     <div id="container">
+
+        
 
             <!-- Add Product Section -->
             <div id="add_section">
 
-                <h1>Add Product</h1>
+                <h2>Add Product</h2>
 
                 <div id="add_products">
 
-                    <input type="number" placeholder="Enter Product Id" id="product_id"> <br>
+                    <input type="number" placeholder="Enter Product Id" id="product_id" required> <br>
 
-                    <input type="text" placeholder="Enter Image URL" id="product_image"> <br>
+                    <input type="text" placeholder="Enter Image URL" id="product_image" required> <br>
 
-                    <input type="text" placeholder="Enter Badge Name" id="product_badge"> <br>
+                    <input type="text" placeholder="Enter Badge Name" id="product_badge" required> <br>
 
-                    <input type="text" placeholder="Enter Product Name" id="product_name"> <br>
+                    <input type="text" placeholder="Enter Product Name" id="product_name" required> <br>
 
-                    <input type="text" placeholder="Enter Product Type" id="product_type"> <br>
+                    <input type="text" placeholder="Enter Product Type" id="product_type" required> <br>
                     
-                    <input type="number" placeholder="Enter Product Price" id="product_price"> <br>
+                    <input type="number" placeholder="Enter Product Price" id="product_price" required> <br>
 
-                    <input type="text" placeholder="Enter Product Message" id="product_message"> <br>
+                    <input type="text" placeholder="Enter Product Message" id="product_message" required> <br>
                     
                     <button id="addTo_mensPage"> Add Product To Men's Page</button> <br>
 
@@ -49,18 +58,30 @@
 
         
         <!-- Display section -->
-        <h3>Products</h3>
         <div id="admin_product_list">
 
-            <div id="admin_mens_products"></div>
+            <div>
+                <h3>Mens Page Products</h3>
+                <div id="admin_mens_products"></div>
+            </div>
 
-            <div id="admin_bodycare_products"></div>
-
+            <div>
+                <h3>Bodycare Page Products</h3>
+                <div id="admin_bodycare_products"></div>    
+            </div>
+            
         </div>
 
     </div>
 
+    <div id="footer"></div>
+
 </body>
 </html>
 
-<script src="./scripts/admin.js"></script>
+<script src="https://kit.fontawesome.com/24c494a6b6.js"
+     crossorigin="anonymous"></script>
+
+<script type="module" src="./scripts/admin.js"></script>
+
+<script type="module" src="./scripts/login.js"></script>

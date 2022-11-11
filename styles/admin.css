@@ -1,0 +1,105 @@
+body{
+    text-align: center;
+}
+
+#container{
+
+    display: flex;
+    justify-content: space-around;
+
+}
+
+    #add_section{
+
+        /* border: 2px solid red; */
+
+
+        text-align: center;
+        width: 30%;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+        height:20%;
+        margin-left: 20px;
+        border-radius: 10px;
+
+    }
+
+        #add_products{
+
+            padding: 20px;
+
+        }
+
+        #add_products > input{
+
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid gray;
+            border-radius: 10px;
+
+            width: 80%;
+
+        }
+
+        #add_products > button{
+
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid gray;
+            border-radius: 10px;
+
+            width: 60%;
+
+            background-color: black;
+            color: white;
+
+        }
+
+    #admin_product_list{
+
+        /* border: 2px solid green; */
+        display: flex;
+        justify-content: space-around;
+
+        text-align: center;
+
+        width: 60%;
+
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        border-radius: 10px;
+        margin-left: 10px;
+
+
+    }
+
+    #admin_product_list > div{
+
+        width: 40%;
+        padding: 20px;
+        font-size: 12px;
+
+    }
+
+    #admin_product_list > div img{
+
+        width: 15%;
+
+    }
+
+    #admin_product_list > div button{
+
+        padding: 5px;
+        margin-left: 10px;
+
+        border: 1px solid black;
+        border-radius: 5px;
+
+        background-color: black;
+        color: white;
+
+        margin-bottom: 20px;
+
+    }
+
+
+
