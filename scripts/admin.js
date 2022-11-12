@@ -295,6 +295,8 @@ let addTo_BodycarePage_btn = document.getElementById("addTo_bodycarePage");
 addTo_BodycarePage_btn.onclick = () => {
 
     addTo_BodycarePage();
+
+    
 }
 
 const addTo_BodycarePage = async () => {
