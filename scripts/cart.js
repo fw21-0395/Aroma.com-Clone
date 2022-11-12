@@ -83,7 +83,7 @@ function append(data){
         btn_wishlist.append(i,"Add to My Love-It List")
         
         btn_wishlist.addEventListener("click",()=>{
-            add_to_wislist();
+            add_to_wislist(el);
         })
         details_div.append(p_name, p_text, p_extratext, btn_wishlist)
         pro_div.append(img_div, details_div)
@@ -263,6 +263,5 @@ function discount(){
 
 const promo_code = document.getElementById('APPLY');
 promo_code.onclick = discount;
-
 
 
