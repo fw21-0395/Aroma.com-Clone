@@ -106,8 +106,7 @@ const navbar = () => {
 
                 
 
-
-                <i class="fa-solid fa-cart-arrow-down"></i>
+                <a href="./cart.html"><i class="fa-solid fa-cart-arrow-down"></i></a>
 
             </div>
 
