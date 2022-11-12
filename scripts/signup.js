@@ -9,35 +9,89 @@ import {footer} from "../components/footer.js";
 let footer_div = document.getElementById("footer");
 footer_div.innerHTML=footer();
 
-let create = document.getElementById("create");
-create.addEventListener('click',function(){
+/* 
+
+
+<form>
+                <p>Create account </p>
+                
+                <p id="msg" ></p>
+                  <label >First Name</label>
+                  <input type="text" id="name" placeholder="First Name" />
+                  <label >Last Name</label>
+                  <input type="text" id="last_name" placeholder="Last Name" />
+                  <label >Username</label>
+                  <input type="text" id="username" placeholder="Username" />
+                  <label >Email</label>
+                  <input type="text" id="email" placeholder="Email" />
+                  <label >Password</label>
+                  <input type="text" id="password" placeholder="Password" />
+                  <span style="color: red;">password length should be more than 8</span><br /> 
+                  <label > ZIP Code</label>
+                  <input type="text" id="zipcode" placeholder="ZIP Code" />
+                  <span style="color: red;">zipcode length should be more than 5</span><br /> 
+                </form>
+                <button id="signup_karo">signup </button>
+
+
+
+
+
+*/
+ const formDikhao=()=>{
+      return  ` <div id="rform">
+      <span id="msg" ></span>
+      <br />
+      <label >First Name</label>
+       <input type="text" id="name" placeholder="First Name" />
+                  <label >Last Name</label>
+                  <input type="text" id="last_name" placeholder="Last Name" />
+                  <label >Username</label>
+                  <input type="text" id="username" placeholder="Username" />
+                  <label >Email</label>
+                  <input type="text" id="email" placeholder="Email" />
+                  <label >Password</label>
+                  <input type="text" id="password" placeholder="Password" />
+                  <span style="color: red;">password length should be more than 8</span><br /> 
+                  <label > ZIP Code</label>
+                  <input type="text" id="zipcode" placeholder="ZIP Code" />
+                  <span style="color: red;">zipcode length should be more than 5</span><br /> 
+                  <button id="signup_karo">signup </button> </div>
+                 
+                 `
+               
+                
+};
+
+
+
+
 let register_form = document.getElementById('register-form');
-register_form.style.visibility="visible";
-register_form.style.padding="10px";
+let create = document.getElementById("create");
 
 
+
+create.addEventListener('click',()=>{
+
+register_form.innerHTML= formDikhao();
+let signup_btn = document.getElementById('signup_karo');
+signup_btn.onclick=()=>{
+    Register();
+    //console.log("test");
+}
 });
 
 
 
-create.addEventListener('dblclick',function(){
-    let register_form = document.getElementById('register-form');
-    register_form.style.visibility="hidden";
-  
+create.addEventListener('dblclick',()=>{
+     register_form.innerHTML=null;
     });
 
-    let signup_karo = document.getElementById('signup_karo');
-    signup_karo.addEventListener('click',function(){
-        Register();
-    });
-    
-
-
+   
 class user {
    
 
     #checkUsername(username){
-
     return username.includes('#')? false : true;
     }
 
@@ -58,11 +112,11 @@ console.log("gauri");
             this.zipcode = p ;
 
             console.log(this);
-           // let actual_data = JSON.stringify(this);
+         
            let signup_data = (this);
             try{
                 if(this.zipcode.length >=5 ){
-                    // let  data = await res.json();
+                  
                     localStorage.setItem('signup_data',JSON.stringify(signup_data ," signup_data " ) );
                     alert(`${this.username} Signup successssfully !!`);
                     window.location="topoffer.html";
@@ -74,7 +128,7 @@ console.log("gauri");
         }
         }else{
             let msg = document.getElementById("msg");
-            msg.innerText="Oops! Something's not right with your submission. Please try again!"; 
+            msg.innerText="Oops! Something's not right.Please try again!"; 
             msg.style.backgroundColor="#f79d9f";
             msg.style.color="#ed0331";
 
@@ -84,7 +138,8 @@ console.log("gauri");
 let u1 =new user();
 
 function Register(){
-    const name = document.getElementById('name').value;
+console.log("gauri");
+const name = document.getElementById('name').value;
 const last_name = document.getElementById('last_name').value;
 const username = document.getElementById('username').value;
 const email = document.getElementById('email').value;
@@ -92,5 +147,5 @@ const password=document.getElementById('password').value;
 const zipcode=document.getElementById('zipcode').value;
 
 u1.signup(name,last_name,username,email,password,zipcode);
-}
+};
 
