@@ -120,11 +120,16 @@ td5.addEventListener("click", function(){
     itembook(el);
     removedata(products,id);
   })
+
+  
 div.append(td1,div_details,td5);
 body.append(div)
 })
-}append(data)
+}
 
+append(data)
+
+// --------------------------------------------------------------------------------------------------------
 
 function itembook(el){
 let booked = JSON.parse(localStorage.getItem("Cart_List")) || [];
