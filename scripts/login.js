@@ -2,42 +2,53 @@ import {navbar} from "../components/navbar.js";
 let navbar_div = document.getElementById('navbar');
 navbar_div.innerHTML = navbar();
 
-
+let log = document.getElementById('log');
+log.style.display="none";
 
  document.querySelector("#signup").addEventListener("click",()=>{
   // console.log("gb")
+  log.style.display="block";
    document.querySelector("#log").classList.add("active");
    log.style.visibility="visible";
+  
+   document.querySelector("#close-btntwo").addEventListener("click",()=>{
+
+    document.querySelector("#log").classList.remove("active");
+    log.style.visibility="hidden";
+   
+ });
+
+ usernameChange();
+
    document.getElementById('l_username').value="";
    document.getElementById('l_password').value="";
     document.getElementById('l_email').value="";
 });
 
-
-document.querySelector("#log #close-btntwo").addEventListener("click",()=>{
+ 
+//document.querySelector("#log #close-btntwo").addEventListener("click",()=>{
    //console.log("gbb")
-   document.querySelector("#log").classList.remove("active");
-   log.style.visibility="hidden";
-
-});
 
 
-document.querySelector("body").addEventListener("load",()=>{
-    //console.log("gbb")
-    let data = JSON.parse(localStorage.getItem('login_data'));
-    if(data==null){
-      span.innerText = `user`;
-   
-    }else{
-      span.innerText = data.username;
-    }
-    
-  });
+
+   //document.querySelector("#log").addEventListener("click",()=>{
+  
+   //});
+   let data = JSON.parse(localStorage.getItem('login_data'));
+   let span = document.getElementById("open-popuptwo");
+   if(data==null){
+    span.innerText = `user`;
+ 
+  }else{
+    span.innerText = data.username;
+  }
+
+
 
 function usernameChange() {
    
-   let span = document.getElementById("open-popuptwo");
-   let data = JSON.parse(localStorage.getItem('login_data'));
+   span = document.getElementById("open-popuptwo");
+   data = JSON.parse(localStorage.getItem('login_data'));
    if(data==null){
     span.innerText = `user`;
    
@@ -70,6 +81,7 @@ function usernameChange() {
             console.log(this);
             try{
                 if( this.username=="Neeraj" &&  this.password=="aroma_12345"){
+                  localStorage.setItem('login_data',JSON.stringify(login_data ," login_data " ) );
                     alert('Admin LogedIn successssfully !!');
                      window.location="admin.html";    
     
@@ -106,4 +118,4 @@ function usernameChange() {
     }
    }
 });
-}usernameChange();
+}
