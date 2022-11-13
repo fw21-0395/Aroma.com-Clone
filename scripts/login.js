@@ -119,4 +119,5 @@ function usernameChange() {
     }
    }
 });
+}
 

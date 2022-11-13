@@ -52,7 +52,7 @@ const navbar = () => {
                 <div id="profile">
 
                 <div id="logoff">
-                    <div>
+                    <div id="div1">
             
                         <img  id="signup" src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/on/demandware.static/Sites-BathAndBodyWorks-Site/-/default/dwa626f986/images/svg-icons/UI-MyAccount.svg?yocs=o_s_ " alt="sign_in_logo">Hello, <span id="open-popuptwo"></span>
                     
