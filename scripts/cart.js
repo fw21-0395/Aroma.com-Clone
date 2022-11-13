@@ -8,10 +8,31 @@ let footer_div = document.getElementById('footer')
 footer_div.innerHTML = footer();
 // footer section
 
-
+let cartdata = [
+    {
+      "id": 1,
+      "name": "After Dark",
+      "badge": "New",
+      "category": "Sweets",
+      "type": "Body Spray",
+      "message": "Discount 20%",
+      "price": 14.5,
+      "image": "https:cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw12677e03/crop/026551386_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_"
+    },
+    {
+      "id": 2,
+      "name": "Black Tie",
+      "badge": "New",
+      "category": "Sweets",
+      "type": "Wallflower Fragrance Refill",
+      "message": "Discount 20%",
+      "price": 7.5,
+      "image": "https:cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw68829434/crop/026587279_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_"
+    }
+]
 
 // cart_js
-// localStorage.setItem("Cart_List",JSON.stringify(cartdata));
+localStorage.setItem("Cart_List",JSON.stringify(cartdata));
 
 
 let cart_data = JSON.parse(localStorage.getItem("Cart_List")) || [] ;
@@ -72,10 +93,10 @@ function append(data){
         p_name.innerText = el.name;
         // 
         const p_text = document.createElement('p');
-        p_text.innerText = el.text;
+        p_text.innerText = el.type;
         // 
         const p_extratext = document.createElement('p');
-        p_extratext.innerText = el.extratext;
+        p_extratext.innerText = el.message;
         // 
         const btn_wishlist = document.createElement('button');
         const i = document.createElement('i');
