@@ -15,6 +15,7 @@ log.style.display="none";
 
     document.querySelector("#log").classList.remove("active");
     log.style.visibility="hidden";
+    log.style.display="none";
    
  });
 
