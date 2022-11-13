@@ -23,34 +23,35 @@
     margin:10px;
 }
 
-#sign_up >#forms{
+#sign_up #forms{
     display: grid;
     justify-content: center;
     align-items: center;
-  margin:20px;
-
-}
-
-
-#register-form >form {
-    margin: 10px;
-    display: grid;
-  width:auto;
+  margin:auto;
   text-align: left;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
 }
 
-#register-form >form> p{
+
+#register-form  #rform {
+    margin: auto;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+ 
+}
+
+#register-form p{
   font-family: Trade Gothic W01 Light,Arial,sans-serif;
   color: #333;
   text-transform: uppercase;
 }
 
 
-#register-form >label {
+#rform label {
   color: black;
   font-size: 16px;
-  margin-left: 10px;
   margin-bottom: 6px;
   line-height: 1;
 }
@@ -58,15 +59,15 @@
 span{
     color: black;
 }
-input,
+#rform input,
 textarea {
   border: 1px solid #ced1d6;
   box-sizing: border-box;
-  margin: 6px 0px 5px 0px;
   resize: vertical;
   color: black;
-  height: auto;
-  width: auto;
+  height: 30px;
+  width: 400px;
+  font-size: 14px;
   
 }
 
@@ -74,7 +75,7 @@ h4{
   background-color: skyblue;
   color: darkblue;
 }
-button{
+ button{
   margin: auto;
   height: 40px;
   width:300px;
@@ -87,7 +88,7 @@ button{
  
   
 }
-button:hover{
+ button:hover{
   background-color: white;
   color: #333333;
   border:0.5px solid #ced1d6;
@@ -111,8 +112,8 @@ h1 {
   margin: auto;
 }
 #register-form{
-  visibility: hidden;
- 
+  visibility:visible;
+ padding:10px;
 }
 #span_div{
   margin: 5px;

@@ -83,7 +83,7 @@ body{
 
         /* border: 2px solid green; */
 
-        width: 60%;
+        width: 55%;
 
         display: flex;
         justify-content:end;
@@ -93,7 +93,7 @@ body{
     #navbar_section_top_left img{
 
     width: 20%;
-    margin-left: 650px;
+    margin-left: 550px;
 
     }
 
@@ -101,7 +101,7 @@ body{
 
         /* border: 2px solid green; */
 
-        width: 40%;
+        width: 45%;
 
         display: flex;
 
