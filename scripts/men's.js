@@ -359,131 +359,74 @@ let ul_body = document.getElementById("men_promo");
 }
 display(promo)
 
-function product_catagory(){
-  let product_catagory = document.getElementById("men_product_catagory").value;
-  //console.log(select_s)
+   const by_men_product_type =  document.getElementById("men_product_type");
 
-  if(product_catagory == 0){
-    data.sort(function(a,b){
-        return a.id-b.id
-    })
-    append(data)
-  }
-  else if(product_catagory == 1){
-    let newdata = data.filter(function(el){
-        return "3-in-1 Hair, Face & Body Wash" === el.type
-    })
-    append(newdata)
-  }
-  else if(product_catagory == 2){
-    let newdata = data.filter(function(el){
-        return "Ultimate Hydration Body Cream" === el.type
-    })
-    append(newdata)
-  }
-  else if(product_catagory == 3){
-    let newdata = data.filter(function(el){
-        return "Body Spray" === el.type
-    })
-    append(newdata)
-  }
-  else if(product_catagory == 4){
-    let newdata = data.filter(function(el){
-        return "Wallflower Fragrance Refill" === el.type
-    })
-    append(newdata)
-  }
-  else if(product_catagory == 5){
-    let newdata = data.filter(function(el){
-        return "Gentle Foaming Hand Soap" === el.type
-    })
-    append(newdata)
-  }
+by_men_product_type.onchange = () => {
+     
+    if(by_men_product_type.value=="body_wash"){
+        by_body_wash();
+    }
+    else if(by_men_product_type.value=="moisturizers"){
+        by_moisturizers();
+    }
+    else if(by_men_product_type.value=="body_spray"){
+        by_body_spray();
+    }
+
 }
 
-    function fragrance_name(){
-  let fragrance_name = document.getElementById("men_fragrance_name").value;
-  //console.log(select_s)
+const by_body_wash= async () => {
 
-  if(fragrance_name == 0){
-    data.sort(function(a,b){
-        return a.id-b.id
-    })
-    append(data)
-  }
-  else if(fragrance_name == 1){
-    let newdata = data.filter(function(el){
-        return "After Dark" === el.name
-    })
-    append(newdata)
-  }
-  else if(fragrance_name == 2){
-    let newdata = data.filter(function(el){
-        return "Black Tie" === el.name
-    })
-    append(newdata)
-  }
-  else if(fragrance_name == 3){
-    let newdata = data.filter(function(el){
-        return "Marble" === el.name
-    })
-    append(newdata)
-  }
-  else if(fragrance_name == 4){
-    let newdata = data.filter(function(el){
-        return "Noir" === el.name
-    })
-    append(newdata)
-  }
-  else if(fragrance_name == 5){
-    let newdata = data.filter(function(el){
-        return "Ocean" === el.name
-    })
-    append(newdata)
-  }
-  else if(fragrance_name == 6){
-    let newdata = data.filter(function(el){
-        return "Teakwood" === el.name
-    })
-    append(newdata)
-  }
+    try{
+        const response= await fetch("https://attractive-songs-1315.herokuapp.com/bodycare?type=Body wash");
+        
+        const data = await response.json();
+
+        // console.log(data);
+
+       append(data);
+
+   }
+   catch(err){
+    console.log(err,"error");
+   }
 }
 
-function fragrance_category(){
-  let fragrance_category = document.getElementById("men_fragrance_category").value;
-  //console.log(select_s)
+const by_moisturizers= async () => {
 
-  if(fragrance_category == 0){
-    data.sort(function(a,b){
-        return a.id-b.id
-    })
-    append(data)
-  }
-  else if(fragrance_category == 1){
-    let newdata = data.filter(function(el){
-        return "Fresh" === el.catagory
-    })
-    append(newdata)
-  }
-  else if(fragrance_category == 2){
-    let newdata = data.filter(function(el){
-        return "Sweets" === el.catagory
-    })
-    append(newdata)
-  }
-  else if(fragrance_category == 3){
-    let newdata = data.filter(function(el){
-        return "Fruits" === el.catagory
-    })
-    append(newdata)
-  }
-  else if(fragrance_category == 4){
-    let newdata = data.filter(function(el){
-        return "Woody" === el.catagory
-    })
-    append(newdata)
-  }
-  
+    try{
+        const response= await fetch("https://attractive-songs-1315.herokuapp.com/bodycare?type=Moistruizers");
+        
+        const data = await response.json();
+
+        // console.log(data);
+
+       append(data);
+
+   }
+   catch(err){
+    console.log(err,"error");
+   }
+
+}
+
+
+const by_body_spray= async () => {
+
+    try{
+        const response= await fetch("https://attractive-songs-1315.herokuapp.com/bodycare?type=Body wash");
+        
+        const data = await response.json();
+
+        // console.log(data);
+
+       append(data);
+
+   }
+   catch(err){
+    console.log(err,"error");
+   }
+
 }
 
 let select_s = document.getElementById("men_sort_by");
@@ -526,48 +469,3 @@ const Dsc = async()=>{
 
 }
 
-
-function allMen(){
-    console.log(7)
-    let newdata = data.filter(function(el){
-        return el.type
-    })
-    append(newdata)
-} 
-
-function bodyWash(){
-    console.log(3)
-    let newdata = data.filter(function(el){
-        return "3-in-1 Hair, Face & Body Wash" === el.type
-    })
-    append(newdata)
-}
-
-function Moisturizers(){
-    console.log(4)
-    let newdata = data.filter(function(el){
-        return "Ultimate Hydration Body Cream" === el.type
-    })
-    append(newdata)
-}
-function BodySpray(){
-    console.log(5)
-    let newdata = data.filter(function(el){
-        return "Body Spray" === el.type
-    })
-    append(newdata)
-}
-function Fragrance(){
-    console.log(6)
-    let newdata = data.filter(function(el){
-        return "Wallflower Fragrance Refill" === el.type
-    })
-    append(newdata)
-}
-function HandSoaps(){
-    console.log(7)
-    let newdata = data.filter(function(el){
-        return "Gentle Foaming Hand Soap" === el.type
-    })
-    append(newdata)
-}
