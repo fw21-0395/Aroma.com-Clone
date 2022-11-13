@@ -12,191 +12,239 @@ footer_div.innerHTML= footer();
 //     {   
 //         id : 1,
 //         name : "After Dark",
-//         type : "Sweets",
-//         details : "Body Spray",
+//         badge : "New",
+//         catagory : "Sweets",
+//         type : "Body Spray",
+//         message : "Discount 20%",
 //         price : 14.50,
 //         image : "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw12677e03/crop/026551386_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_"
 //     },
 //     {
 //         id : 2,
 //         name : "Black Tie",
-//         type : "Sweets",
-//         details : "Wallflower Fragrance Refill",
+//         badge : "New",
+//         catagory : "Sweets",
+//         type : "Wallflower Fragrance Refill",
+//         message : "Discount 20%",
 //         price : 7.50,
 //         image : "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw68829434/crop/026587279_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_"
 //     },
 //     {
 //         id : 3,
 //         name : "Cedar & Suede",
-//         type : "Woody",
-//         details : "3-wick Candle",
+//         badge : "New",
+//         catagory : "Woody",
+//         type : "3-wick Candle",
+//         message : "Discount 20%",
 //         price : 29.50,
 //         image : "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwc446faf6/crop/026588538_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_"
 //     },
 //     {
 //         id : 4,
 //         name : "Birch & Eucalyptus",
-//         type : "Woody",
-//         details : "Ultimate Hydration Body Cream",
+//         badge : "New",
+//         catagory : "Woody",
+//         type : "Ultimate Hydration Body Cream",
+//         message : "Discount 20%",
 //         price : 16.50,
 //         image : "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw788dbf70/crop/026501180_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_"
 //     },
 //     {
 //         id : 5,
 //         name : "Black Tie",
-//         type : "Sweets",
-//         details : "Gentle Foaming Hand Soap",
+//         badge : "New",
+//         catagory : "Sweets",
+//         type : "Gentle Foaming Hand Soap",
+//         message : "Discount 20%",
 //         price : 7.50,
 //         image : "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwc1518184/crop/026438827_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_"
 //     },
 //     {
 //         id : 6,
 //         name : "After Dark",
-//         type : "Sweets",
-//         details : "3-wick Candle",
+//         badge : "New",
+//         catagory : "Sweets",
+//         type : "3-wick Candle",
+//         message : "Discount 20%",
 //         price : "26.50",
 //         image : "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwb2ea9f52/crop/026617880_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_"
 //     },
 //     {
 //         id : 7,
 //         name : "Classic Flannel",
-//         type : "Fruits",
-//         details : "Body Spray",
+//         badge : "New",
+//         catagory : "Fruits",
+//         type : "Body Spray",
+//         message : "Discount 20%",
 //         price : 14.50,
 //         image : "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwcf9d3d94/crop/026553504_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_"
 //     },
 //     {
 //         id : 8,
 //         name : "Mahogany Teakwood",
-//         type : "Woody",
-//         details : "Wallflower Fragrance Refill",
+//         badge : "New",
+//         catagory : "Woody",
+//         type : "Wallflower Fragrance Refill",
+//         message : "Discount 20%",
 //         price : 7.50,
 //         image : "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw9bdbdc19/crop/026413481_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_"
 //     },
 //     {
 //         id : 9,
 //         name : "Noir",
-//         type : "Fresh",
-//         details : "3-in-1 Hair, Face & Body Wash",
+//         badge : "New",
+//         catagory : "Fresh",
+//         type : "3-in-1 Hair, Face & Body Wash",
+//         message : "Discount 20%",
 //         price : 8.50,
 //         image : "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwce73973f/crop/026311425_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_"
 //     },
 //     {
 //         id : 10,
 //         name : "Bourbon",
-//         type : "Fruits",
-//         details : "Ultimate Hydration Body Cream",
+//         badge : "New",
+//         catagory : "Fruits",
+//         type : "Ultimate Hydration Body Cream",
+//         message : "Discount 20%",
 //         price : 16.50,
 //         image : "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwef08bb2c/crop/026552804_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_"
 //     },
 //     {
 //         id : 11,
 //         name : "Vintage",
-//         type : "Woody",
-//         details : "Gentle Foaming Hand Soap",
+//         badge : "New",
+//         catagory : "Woody",
+//         type : "Gentle Foaming Hand Soap",
+//         message : "Discount 20%",
 //         price : 7.50,
 //         image : "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw41ccd312/crop/026438828_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_"
 //     },
 //     {
 //         id : 12,
 //         name : "Flannel",
-//         type : "Fruits",
-//         details : "3-wick Candle",
+//         badge : "New",
+//         catagory : "Fruits",
+//         type : "3-wick Candle",
+//         message : "Discount 20%",
 //         price : 26.50,
 //         image : "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwe53c7f6b/crop/026579255_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_"
 //     },
 //     {
 //         id : 13,
 //         name : "Marble",
-//         type : "Sweets",
-//         details : "Body Spray",
+//         badge : "New",
+//         catagory : "Sweets",
+//         type : "Body Spray",
+//         message : "Discount 20%",
 //         price : 14.50,
 //         image : "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw5cbd391e/crop/026394956_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_"
 //     },
 //     {
 //         id : 14,
 //         name : "Noir",
-//         type : "Fresh",
-//         details : "Body Spray",
+//         badge : "New",
+//         catagory : "Fresh",
+//         type : "Body Spray",
+//         message : "Discount 20%",
 //         price : 14.50,
 //         image : "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw459dddc8/crop/026311429_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_"
 //     },
 //     {
 //         id : 15,
 //         name : "Smoked Vanilla Whiskey",
-//         type : "Sweets",
-//         details : "3-wick Candle",
+//         badge : "New",
+//         catagory : "Sweets",
+//         type : "3-wick Candle",
+//         message : "Discount 20%",
 //         price : 26.50,
 //         image : "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwbed84473/crop/026587313_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_"
 //     },
 //     {
 //         id : 16,
 //         name : "Whiskey Reserve",
-//         type : "Sweets",
-//         details : "Ultimate Hydration Body Cream",
+//         badge : "New",
+//         catagory : "Sweets",
+//         type : "Ultimate Hydration Body Cream",
+//         message : "Discount 20%",
 //         price : 16.50,
 //         image : "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw8f1efea3/crop/026551695_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_"
 //     },
 //     {
 //         id : 17,
 //         name : "After Dark",
-//         details : "Gentle Foaming Hand Soap",
+//         badge : "New",
+//         type : "Gentle Foaming Hand Soap",
+//         message : "Discount 20%",
 //         price : 3.50,
 //         image : "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw6612198e/crop/026582120_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_"
 //     },
 //     {
 //         id : 18,
 //         name : "Marble",
-//         type : "Sweets",
-//         details : "3-in-1 Hair, Face & Body Wash",
+//         badge : "New",
+//         catagory : "Sweets",
+//         type : "3-in-1 Hair, Face & Body Wash",
+//         message : "Discount 20%",
 //         price : 3.50,
 //         image : "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw5f315ee2/crop/026291736_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_"
 //     },
 //     {
 //         id : 19,
 //         name : "FROZEN Lake",
-//         type : "Fresh",
-//         details : "Gentle Foaming Hand Soap",
+//         badge : "New",
+//         catagory : "Fresh",
+//         type : "Gentle Foaming Hand Soap",
+//         message : "Discount 20%",
 //         price : 15.50,
 //         image : "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwb1fe7648/crop/026559351_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_"
 //     },
 //     {
 //         id : 20,
 //         name : "Teakwood",
-//         type : "Woody",
-//         details : "Ultimate Hydration Body Cream",
+//         badge : "New",
+//         catagory : "Woody",
+//         type : "Ultimate Hydration Body Cream",
+//         message : "Discount 20%",
 //         price : 16.50,
 //         image : "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw76e724ed/crop/026295921_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_"
 //     },
 //     {
 //         id : 21,
 //         name : "Laundry Day",
-//         type : "Woody",
-//         details : "Wallflower Fragrance Refill",
+//         badge : "New",
+//         catagory : "Woody",
+//         type : "Wallflower Fragrance Refill",
+//         message : "Discount 20%",
 //         price : 7.50,
 //         image : "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw3022bdd5/crop/026397324_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_"
 //     },
 //     {
 //         id : 22,
 //         name : "Ocean",
-//         type : "Fresh",
-//         details : "Wallflower Fragrance Refill",
+//         badge : "New",
+//         catagory : "Fresh",
+//         type : "Wallflower Fragrance Refill",
+//         message : "Discount 20%",
 //         price : 7.50,
 //         image : "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw2efeac59/crop/026466939_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_"
 //     },
 //     {
 //         id : 23,
 //         name : "Teakwood",
-//         type : "Woody",
-//         details : "3-in-1 Hair, Face & Body Wash",
+//         badge : "New",
+//         catagory : "Woody",
+//         type : "3-in-1 Hair, Face & Body Wash",
+//         message : "Discount 20%",
 //         price : 13.50,
 //         image : "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwc6262222/crop/026177563_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_"
 //     },
 //     {
 //         id : 24,
 //         name : "Ocean",
-//         type : "Fresh",
-//         details : "3-in-1 Hair, Face & Body Wash",
+//         badge : "New",
+//         category : "Fresh",
+//         type : "3-in-1 Hair, Face & Body Wash",
+//         message : "Discount 20%",
 //         price : 13.50,
 //         image : "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwf9b1131b/crop/026237209_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_"
 //     }
@@ -265,7 +313,7 @@ getData();
     td2.innerText = el.name;
 
     let td3 = document.createElement('p');
-    td3.innerText = el.type;
+    td3.innerText = el.catagory;
 
     let td4 = document.createElement('p');
     td4.innerText = "$"+el.price;
@@ -311,43 +359,43 @@ let ul_body = document.getElementById("men_promo");
 }
 display(promo)
 
-function product_type(){
-  let product_type = document.getElementById("men_product_type").value;
+function product_catagory(){
+  let product_catagory = document.getElementById("men_product_catagory").value;
   //console.log(select_s)
 
-  if(product_type == 0){
+  if(product_catagory == 0){
     data.sort(function(a,b){
         return a.id-b.id
     })
     append(data)
   }
-  else if(product_type == 1){
+  else if(product_catagory == 1){
     let newdata = data.filter(function(el){
-        return "3-in-1 Hair, Face & Body Wash" === el.details
+        return "3-in-1 Hair, Face & Body Wash" === el.type
     })
     append(newdata)
   }
-  else if(product_type == 2){
+  else if(product_catagory == 2){
     let newdata = data.filter(function(el){
-        return "Ultimate Hydration Body Cream" === el.details
+        return "Ultimate Hydration Body Cream" === el.type
     })
     append(newdata)
   }
-  else if(product_type == 3){
+  else if(product_catagory == 3){
     let newdata = data.filter(function(el){
-        return "Body Spray" === el.details
+        return "Body Spray" === el.type
     })
     append(newdata)
   }
-  else if(product_type == 4){
+  else if(product_catagory == 4){
     let newdata = data.filter(function(el){
-        return "Wallflower Fragrance Refill" === el.details
+        return "Wallflower Fragrance Refill" === el.type
     })
     append(newdata)
   }
-  else if(product_type == 5){
+  else if(product_catagory == 5){
     let newdata = data.filter(function(el){
-        return "Gentle Foaming Hand Soap" === el.details
+        return "Gentle Foaming Hand Soap" === el.type
     })
     append(newdata)
   }
@@ -413,63 +461,76 @@ function fragrance_category(){
   }
   else if(fragrance_category == 1){
     let newdata = data.filter(function(el){
-        return "Fresh" === el.type
+        return "Fresh" === el.catagory
     })
     append(newdata)
   }
   else if(fragrance_category == 2){
     let newdata = data.filter(function(el){
-        return "Sweets" === el.type
+        return "Sweets" === el.catagory
     })
     append(newdata)
   }
   else if(fragrance_category == 3){
     let newdata = data.filter(function(el){
-        return "Fruits" === el.type
+        return "Fruits" === el.catagory
     })
     append(newdata)
   }
   else if(fragrance_category == 4){
     let newdata = data.filter(function(el){
-        return "Woody" === el.type
+        return "Woody" === el.catagory
     })
     append(newdata)
   }
   
 }
 
-function sortby(){
-  let select_s = document.getElementById("men_sort_by").value;
-  //console.log(select_s)
+let select_s = document.getElementById("men_sort_by");
+select_s.onchange = () =>{
+    if(select_s.value === "asc"){
+        Asc();
+    }
+    else if(select_s.value === "dsc"){
+        Dsc();
+    }
+}
 
-  if(select_s == 0){
-    data.sort(function(a,b){
-        return a.id-b.id
-    })
-    append(data)
-  }
-  else if(select_s == 1){
-    //console.log(1);
-    data.sort(function(a,b){
-        return a.price-b.price
-    })
-    append(data)
-  }
-  else if(select_s == 2){
-    //console.log(2);
-    data.sort(function(a,b){
-        return b.price-a.price
-    })
-    append(data)
-  }
-  
+const Asc = async()=>{
+    console.log("test1");
+    try{
+        const response = await fetch ("https://attractive-songs-1315.herokuapp.com/menspage?_sort=price&_order=asc");
+
+        const data = await response.json();
+        console.log(data)
+        append(data)
+    }
+    catch(err){
+        console.log(err,"error");
+    }
+
+}
+
+const Dsc = async()=>{
+    console.log("test2");
+    try{
+        const response = await fetch ("https://attractive-songs-1315.herokuapp.com/menspage?_sort=price&_order=desc");
+
+        const data = await response.json();
+        console.log(data)
+        append(data)
+    }
+    catch(err){
+        console.log(err,"error");
+    }
+
 }
 
 
 function allMen(){
     console.log(7)
     let newdata = data.filter(function(el){
-        return el.details
+        return el.type
     })
     append(newdata)
 } 
@@ -477,7 +538,7 @@ function allMen(){
 function bodyWash(){
     console.log(3)
     let newdata = data.filter(function(el){
-        return "3-in-1 Hair, Face & Body Wash" === el.details
+        return "3-in-1 Hair, Face & Body Wash" === el.type
     })
     append(newdata)
 }
@@ -485,28 +546,28 @@ function bodyWash(){
 function Moisturizers(){
     console.log(4)
     let newdata = data.filter(function(el){
-        return "Ultimate Hydration Body Cream" === el.details
+        return "Ultimate Hydration Body Cream" === el.type
     })
     append(newdata)
 }
 function BodySpray(){
     console.log(5)
     let newdata = data.filter(function(el){
-        return "Body Spray" === el.details
+        return "Body Spray" === el.type
     })
     append(newdata)
 }
 function Fragrance(){
     console.log(6)
     let newdata = data.filter(function(el){
-        return "Wallflower Fragrance Refill" === el.details
+        return "Wallflower Fragrance Refill" === el.type
     })
     append(newdata)
 }
 function HandSoaps(){
     console.log(7)
     let newdata = data.filter(function(el){
-        return "Gentle Foaming Hand Soap" === el.details
+        return "Gentle Foaming Hand Soap" === el.type
     })
     append(newdata)
 }
