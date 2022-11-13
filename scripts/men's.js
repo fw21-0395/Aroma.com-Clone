@@ -313,7 +313,7 @@ getData();
     td2.innerText = el.name;
 
     let td3 = document.createElement('p');
-    td3.innerText = el.catagory;
+    td3.innerText = el.type;
 
     let td4 = document.createElement('p');
     td4.innerText = "$"+el.price;
@@ -359,26 +359,48 @@ let ul_body = document.getElementById("men_promo");
 }
 display(promo)
 
-   const by_men_product_type =  document.getElementById("men_product_type");
+// filter function product type start from here ------------------------------------------------------------------------------------------------
+
+const by_men_product_type =  document.getElementById("men_product_type");
 
 by_men_product_type.onchange = () => {
      
-    if(by_men_product_type.value=="body_wash"){
-        by_body_wash();
-    }
-    else if(by_men_product_type.value=="moisturizers"){
+    if(by_men_product_type.value=="1"){
         by_moisturizers();
     }
-    else if(by_men_product_type.value=="body_spray"){
+    else if(by_men_product_type.value=="2"){
         by_body_spray();
+    }
+    else if(by_men_product_type.value=="3"){
+        by_fragrance();
+    }
+    else if(by_men_product_type.value=="4"){
+        by_hand_soap();
     }
 
 }
 
-const by_body_wash= async () => {
+const by_hand_soap= async () => {
 
     try{
-        const response= await fetch("https://attractive-songs-1315.herokuapp.com/bodycare?type=Body wash");
+        const response= await fetch("https://attractive-songs-1315.herokuapp.com/menspage?type=Gentle Foaming Hand Soap");
+        
+        const data = await response.json();
+
+        // console.log(data);
+
+       append(data);
+
+   }
+   catch(err){
+    console.log(err,"error");
+   }
+}
+
+const by_body_spray= async () => {
+
+    try{
+        const response= await fetch("https://attractive-songs-1315.herokuapp.com/menspage?type=Body Spray");
         
         const data = await response.json();
 
@@ -395,7 +417,7 @@ const by_body_wash= async () => {
 const by_moisturizers= async () => {
 
     try{
-        const response= await fetch("https://attractive-songs-1315.herokuapp.com/bodycare?type=Moistruizers");
+        const response= await fetch("https://attractive-songs-1315.herokuapp.com/menspage?type=Ultimate Hydration Body Cream");
         
         const data = await response.json();
 
@@ -411,10 +433,10 @@ const by_moisturizers= async () => {
 }
 
 
-const by_body_spray= async () => {
+const by_fragrance= async () => {
 
     try{
-        const response= await fetch("https://attractive-songs-1315.herokuapp.com/bodycare?type=Body wash");
+        const response= await fetch("https://attractive-songs-1315.herokuapp.com/menspage?type=Wallflower Fragrance Refill");
         
         const data = await response.json();
 
@@ -428,6 +450,236 @@ const by_body_spray= async () => {
    }
 
 }
+
+
+// filter function fragrance name start from here ------------------------------------------------------------------------------------------------
+
+const by_men_fragrance_name =  document.getElementById("men_fragrance_name");
+
+by_men_fragrance_name.onchange = () => {
+     
+    if(by_men_fragrance_name.value=="1"){
+        by_after_dark();
+    }
+    else if(by_men_fragrance_name.value=="2"){
+        by_black_tie();
+    }
+    else if(by_men_fragrance_name.value=="3"){
+        by_marble();
+    }
+    else if(by_men_fragrance_name.value=="4"){
+        by_noir();
+    }
+    else if(by_men_fragrance_name.value=="5"){
+        by_ocean();
+    }
+    else if(by_men_fragrance_name.value=="6"){
+        by_teakwood();
+    }
+
+}
+
+const by_after_dark= async () => {
+
+    try{
+        const response= await fetch("https://attractive-songs-1315.herokuapp.com/menspage?name=After Dark");
+        
+        const data = await response.json();
+
+        // console.log(data);
+
+       append(data);
+
+   }
+   catch(err){
+    console.log(err,"error");
+   }
+}
+
+const by_black_tie= async () => {
+
+    try{
+        const response= await fetch("https://attractive-songs-1315.herokuapp.com/menspage?name=Black Tie");
+        
+        const data = await response.json();
+
+        // console.log(data);
+
+       append(data);
+
+   }
+   catch(err){
+    console.log(err,"error");
+   }
+}
+
+const by_marble= async () => {
+
+    try{
+        const response= await fetch("https://attractive-songs-1315.herokuapp.com/menspage?name=Marble");
+        
+        const data = await response.json();
+
+        // console.log(data);
+
+       append(data);
+
+   }
+   catch(err){
+    console.log(err,"error");
+   }
+
+}
+
+
+const by_noir= async () => {
+
+    try{
+        const response= await fetch("https://attractive-songs-1315.herokuapp.com/menspage?name=Noir");
+        
+        const data = await response.json();
+
+        // console.log(data);
+
+       append(data);
+
+   }
+   catch(err){
+    console.log(err,"error");
+   }
+
+}
+
+const by_ocean= async () => {
+
+    try{
+        const response= await fetch("https://attractive-songs-1315.herokuapp.com/menspage?name=Ocean");
+        
+        const data = await response.json();
+
+        // console.log(data);
+
+       append(data);
+
+   }
+   catch(err){
+    console.log(err,"error");
+   }
+
+}
+
+const by_teakwood= async () => {
+
+    try{
+        const response= await fetch("https://attractive-songs-1315.herokuapp.com/menspage?name=Teakwood");
+        
+        const data = await response.json();
+
+        // console.log(data);
+
+       append(data);
+
+   }
+   catch(err){
+    console.log(err,"error");
+   }
+
+}
+
+// filter function fragrance type start from here ------------------------------------------------------------------------------------------------
+
+const by_men_fragrance_category =  document.getElementById("men_fragrance_category");
+
+by_men_fragrance_category.onchange = () => {
+     
+    if(by_men_fragrance_category.value=="1"){
+        by_fresh();
+    }
+    else if(by_men_fragrance_category.value=="2"){
+        by_sweets();
+    }
+    else if(by_men_fragrance_category.value=="3"){
+        by_fruits();
+    }
+    else if(by_men_fragrance_category.value=="4"){
+        by_woody();
+    }
+
+}
+
+const by_fresh= async () => {
+
+    try{
+        const response= await fetch("https://attractive-songs-1315.herokuapp.com/menspage?category=Fresh");
+        
+        const data = await response.json();
+
+        // console.log(data);
+
+       append(data);
+
+   }
+   catch(err){
+    console.log(err,"error");
+   }
+}
+
+const by_sweets= async () => {
+
+    try{
+        const response= await fetch("https://attractive-songs-1315.herokuapp.com/menspage?category=Sweets");
+        
+        const data = await response.json();
+
+        // console.log(data);
+
+       append(data);
+
+   }
+   catch(err){
+    console.log(err,"error");
+   }
+}
+
+const by_fruits= async () => {
+
+    try{
+        const response= await fetch("https://attractive-songs-1315.herokuapp.com/menspage?category=Fruits");
+        
+        const data = await response.json();
+
+        // console.log(data);
+
+       append(data);
+
+   }
+   catch(err){
+    console.log(err,"error");
+   }
+
+}
+
+
+const by_woody= async () => {
+
+    try{
+        const response= await fetch("https://attractive-songs-1315.herokuapp.com/menspage?category=Woody");
+        
+        const data = await response.json();
+
+        // console.log(data);
+
+       append(data);
+
+   }
+   catch(err){
+    console.log(err,"error");
+   }
+
+}
+
+
+// sort function start from here ------------------------------------------------------------------------------------------------
 
 let select_s = document.getElementById("men_sort_by");
 select_s.onchange = () =>{
