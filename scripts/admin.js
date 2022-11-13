@@ -73,6 +73,7 @@ const append_mens = (container,data) => {
             card_delete_btn.onclick = () => {
 
                 deleteFrom_mensPage(el.id);
+                addtoTrash(el)
 
             }
 

@@ -91,7 +91,7 @@ function usernameChange() {
                     alert('User LogedIn successssfully !!');
                     //if need to change the location of window give the next location below 
                    
-                     window.location="topoffer.html";   
+                     window.location="men's.html";   
                    }
 
                // let data = JSON.parse(localStorage.getItem('login_data'));

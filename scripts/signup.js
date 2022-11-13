@@ -119,7 +119,7 @@ console.log("gauri");
                   
                     localStorage.setItem('signup_data',JSON.stringify(signup_data ," signup_data " ) );
                     alert(`${this.username} Signup successssfully !!`);
-                    window.location="topoffer.html";
+                    window.location="men's.html";
                 }else{
                     alert(`${this.username} Enter valid zipcode`);
                 }

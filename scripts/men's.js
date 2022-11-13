@@ -337,7 +337,7 @@ getData();
 function itembook(el){
     let booked = JSON.parse(localStorage.getItem("Cart_List")) || [];
     booked.push(el)
-    localStorage.setItem("Cart_list",JSON.stringify(booked));
+    localStorage.setItem("Cart_List",JSON.stringify(booked));
 }
 
 let ul_body = document.getElementById("men_promo");

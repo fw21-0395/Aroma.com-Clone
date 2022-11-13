@@ -29,207 +29,7 @@ footer_div.innerHTML=footer();
 
 getData();
 
-//    var data = [
-//        {   
-//            id : 1,
-//            image : "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw4b491d20/crop/026535136_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_",
-//            badge : "New Fragrance",
-//            name : "Dream Bright",
-//            price : 17.50,
-//            message : "Mix & match Full-Size: Buy 3, Get 1 FREE",  
-//            type : "Body Spray",
-//            category : "Floral",
-//        },
-//        {   
-//            id : 2,
-//            image : "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw0580616f/crop/026551380_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_",
-//            badge : "New Fragrance",
-//            name : "After Dark",
-//            price : 14.50,
-//            message : "Mix & match Full-Size: Buy 3, Get 1 FREE",  
-//            type : "Body Wash",
-//            category : "Sweet",
-//        },
-//        {   
-//            id : 3,
-//            image : "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw8ab78bd7/crop/026539029_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_",
-//            badge : "New Fragrance",
-//            name : "Vanilla Bean Noel",
-//            price : 16.50,
-//            message : "Mix & match Full-Size: Buy 3, Get 1 FREE",  
-//            type : "Body Cream",
-//            category : "Floral",
-//        },
-//        {   
-//            id : 4,
-//            image : "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwb39e72d8/crop/026567998_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_",
-//            badge : "New!",
-//            name : "Eucalyptus Lavender",
-//            price : 15.50,
-//            message : "Mix & match Full-Size: Buy 3, Get 1 FREE",  
-//            type : "Body Wash",
-//            category : "Sweet",
-//        },
-//        {   
-//            id : 5,
-//            image : "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw66ce122a/hires/026559301_alt_1.jpg?sh=413&yocs=o_s_",
-//            badge : "New!",
-//            name : "Strawberry Showflakes",
-//            price : 14.50,
-//            message : "Mix & match Full-Size: Buy 3, Get 1 FREE",  
-//            type : "Body Wash",
-//            category : "Floral",
-//        },
-//        {   
-//            id : 6,
-//            image : "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw4bbac15d/crop/026557579_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_",
-//            badge : "New!",
-//            name : "Snowflakes & Cashmere",
-//            price : 16.50,
-//            message : "Mix & match Full-Size: Buy 3, Get 1 FREE",  
-//            type : "Body Spray",
-//            category : "Sweet",
-//        },
-//        {   
-//            id : 7,
-//            image : "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw7a23c1cb/crop/026557573_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_",
-//            badge : "New!",
-//            name : "Frostes Cocunut Snowball",
-//            price : 14.50,
-//            message : "Mix & match Full-Size: Buy 3, Get 1 FREE",  
-//            type : "Body Cream",
-//            category : "Sweet",
-//        },
-//        {   
-//            id : 8,
-//            image : "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw67bdae98/crop/026398463_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_",
-//            badge : "New!",
-//            name : "Black Tie",
-//            price : 14.50,
-//            message : "Mix & match Full-Size: Buy 3, Get 1 FREE",  
-//            type : "Body Spray",
-//            category : "Fresh",
-//        },
-//        {   
-//            id : 9,
-//            image : "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw2f7f9dab/crop/026480833_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=s_", 
-//            badge : "New!",
-//            name : "Winter Candy Apple",
-//            price : 16.50,
-//            message : "Mix & match Full-Size: Buy 3, Get 1 FREE",  
-//            type : "Body Cream",
-//            category : "Sweet",
-//        },
-//        {   
-//            id : 10,
-//            image : "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw81522767/crop/026401914_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=s_",   badge : "New!",
-//            name : "Winterberry Wonder",
-//            price : 13.50,
-//            message : "Mix & match Full-Size: Buy 3, Get 1 FREE",  
-//            type : "Body Wash",
-//            category : "Fresh",
-//        },
-//        {   
-//            id : 11,
-//            image : "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwda910a0d/crop/026569109_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_",
-//            badge : "New!",
-//            name : "Vanilla Mocha Martini",
-//            price : 17.50,
-//            message : "Mix & match Full-Size: Buy 3, Get 1 FREE",  
-//            type : "Body Spray",
-//            category : "Sweet",
-//        },
-//        {   
-//            id : 12,
-//            image : "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw40d245c7/crop/026553502_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_",
-//            badge : "Online Exclusive",
-//            name : "Classic Flannel",
-//            price : 14.50,
-//            message : "Mix & match Full-Size: Buy 3, Get 1 FREE",  
-//            type : "Body Wash",
-//            category : "Fresh",
-//        },
-//        {   
-//            id : 13,
-//            image : "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwd12c9066/hires/026558225_alt_1.jpg?sh=413&yocs=s_",
-//            badge : "New!",
-//            name : "Winter Candy Apple",
-//            price : 16.50,
-//            message : "Mix & match Full-Size: Buy 3, Get 1 FREE",  
-//            type : "Body Spray",
-//            category : "Sweet",
-//        },
-//        {   
-//            id : 14,
-//            image : "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw5baf2a80/crop/026539030_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=s_",
-//            badge : "New!",
-//            name : "Winter Candy Apple",
-//            price : 16.50,
-//            message : "Mix & match Full-Size: Buy 3, Get 1 FREE",  
-//            type : "Body Cream",
-//            category : "Fresh",
-//        },
-//        {   
-//            id : 15,
-//            image : "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw9285085c/crop/026557566_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=s_",
-//            badge : "New!",
-//            name : "Winterberry Wonder",
-//            price : 13.50,
-//            message : "Mix & match Full-Size: Buy 3, Get 1 FREE",  
-//            type : "Body Wash",
-//            category : "Sweet",
-//        },
-//        {   
-//            id : 16,
-//            image : "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwc82289e5/hires/026569107_alt_1.jpg?sh=413&yocs=s_",
-//            badge : "New!",
-//            name : "Vanilla Mocha MArtini",
-//            price : 17.50,
-//            message : "Mix & match Full-Size: Buy 3, Get 1 FREE",  
-//            type : "Body Spray",
-//            category : "Fresh",
-//        },
-//        {   
-//            id : 17,
-//            image : "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw6c3d8902/crop/026553500_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=s_",
-//            badge : "Online Exclusive",
-//            name : "Winter Candy Apple",
-//            price : 14.50,
-//            message : "Mix & match Full-Size: Buy 3, Get 1 FREE",  
-//            type : "Body Spray",
-//            category : "Sweet",
-//        },
-//        {   
-//            id : 18,
-//            image : "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwb1006457/crop/026354084_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=s_",    
-//            badge : "Online Exclusive",
-//            name : "Japanese Cherry Blossom",
-//            price : 14.50,
-//            message : "Mix & match Full-Size: Buy 3, Get 1 FREE",  
-//            type : "Body Cream",
-//            category : "Fresh",
-//        },
-//        {   
-//            id : 19,
-//            image : "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw76e724ed/crop/026295921_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=s_",  
-//            badge : "Online Exclusive",
-//            name : "Teakwood",
-//            price : 16.50,
-//            message : "Mix & match Full-Size: Buy 3, Get 1 FREE",  
-//            type : "Body Cream",
-//            category : "Fresh",
-//        },
-//        {   
-//            id : 20,
-//            image : "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw7ac01f32/crop/026353250_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=s_",   
-//            badge : "Online Exclusive",
-//            name : "Eucaplytus Spearmint",
-//            price : 18.50,
-//            message : "Mix & match Full-Size: Buy 3, Get 1 FREE",  
-//            type : "Body Oil",
-//            category : "Fresh",
-//        }
-//    ];
+
    
    let body=document.getElementById("container1");
    
@@ -258,12 +58,22 @@ getData();
    
    let td7 = document.createElement('button');
    td7.innerText="Add to Cart"
+   td7.className = "btn";
+   td7.addEventListener("click", function(){
+    itembook(el);
+  })
 
 
    tr.append(td1,td1,td2,td3,td4,td5,td6,td7);
        body.append(tr);
        });
    };
+
+   function itembook(el){
+    let booked = JSON.parse(localStorage.getItem("Cart_List")) || [];
+    booked.push(el)
+    localStorage.setItem("Cart_List",JSON.stringify(booked));
+}
    
     // append(data);
    
@@ -403,24 +213,6 @@ by_fragrancecategory.onchange = () => {
    }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//    >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
    const by_fragrancetype=  document.getElementById("fragrancetype");
 

@@ -88,9 +88,10 @@ wish_body.append(tr)
 
 localStorage.setItem("men's_products",JSON.stringify(products_arr));
 
-let data = JSON.parse(localStorage.getItem("Cart_list")) || [] ;
+let data = JSON.parse(localStorage.getItem("wishlist")) || [] ;
 
 let  body = document.getElementById("wish_list");
+
 function append(products) {
 body.innerHTML = null
 
@@ -107,7 +108,7 @@ let td2 = document.createElement('h3');
 td2.innerHTML = el.name;
 
 let td3 = document.createElement('p');
-td3.innerHTML = el.details;
+td3.innerHTML = el.type;
 
 // let td4 = document.createElement('p');
 // td4.innerHTML = `$${el.price}`;
@@ -132,7 +133,7 @@ append(data)
 // --------------------------------------------------------------------------------------------------------
 
 function itembook(el){
-let booked = JSON.parse(localStorage.getItem("Cart_List")) || [];
+let booked = JSON.parse(localStorage.getItem("wishlist")) || [];
 booked.push(el)
 localStorage.setItem("Cart_list",JSON.stringify(booked));
 }
@@ -141,6 +142,7 @@ function removedata(arr,index){
 newData = arr.filter(function(el,i){
   return i!=index;
 })
-localStorage.setItem("men,s_Product",JSON.stringify(data));
+localStorage.setItem("wishlist",JSON.stringify(data));
 append(newData)
 }
+

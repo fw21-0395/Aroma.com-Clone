@@ -53,8 +53,8 @@ const navbar = () => {
 
                 <div id="logoff">
                     <div id="div1">
-            
-                        <img  id="signup" src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/on/demandware.static/Sites-BathAndBodyWorks-Site/-/default/dwa626f986/images/svg-icons/UI-MyAccount.svg?yocs=o_s_ " alt="sign_in_logo">Hello, <span id="open-popuptwo"></span>
+
+                        <i  id="signup" class="fa-solid fa-user"></i>Hello, <span id="open-popuptwo"></span>
                     
                         <div id="log">
                                 <div class="close-btntwo" id="close-btntwo">&times;</div>
@@ -65,7 +65,7 @@ const navbar = () => {
 
                                 <a class="anc" href="index.html" title="My wishlist">Home</a>
 
-                                <a class="anc" href="my_wishlist.html" title="My wishlist">My wishlist</a>
+                                <a class="anc" href="wish_list.html" title="My wishlist">My wishlist</a>
 
                                 <hr>
 
@@ -106,7 +106,7 @@ const navbar = () => {
 
                 
 
-                <a href="./cart.html"><i class="fa-solid fa-cart-arrow-down"></i></a>
+                <a id="cart_new" href="./cart.html"><i class="fa-solid fa-cart-arrow-down"></i></a>
 
             </div>
 
@@ -119,7 +119,7 @@ const navbar = () => {
             <p>CANDLES</p>
             <p>WALLFLOWERS & AIR FRESHNERS</p>
             <p>HAND SOAPS & SANITIZERS</p>
-            <p> <a href="./mens's.html"> MEN'S SHOP </a> </p>
+            <p> <a href="men's.html"> MEN'S SHOP </a> </p>
             <p>MOXY</p>
             <p>HOLIDAY SHOP</p>
 
