@@ -112,7 +112,7 @@ function append(data){
         // 
         const div_price = document.createElement('div');
         const p_price = document.createElement('p');
-        p_price.innerText = el.price
+        p_price.innerText = "$" + el.price
         div_price.append(p_price)
         // 3rd div
         const div_qty = document.createElement('div');
@@ -141,7 +141,7 @@ function append(data){
         const div_totalofpro = document.createElement('div');
         let p_total = document.createElement('p');
         totalPrice = input_qty.value * el.price;
-        p_total.innerText = totalPrice;
+        p_total.innerText = "$" + totalPrice;
         // console.log(el.price)
         // console.log(input_qty.value)
         div_totalofpro.append(p_total);

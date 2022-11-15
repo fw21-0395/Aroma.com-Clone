@@ -84,7 +84,7 @@ const navbar = () => {
                                                     <label >Email Address</label>
                                                     <input type="text" id="l_email" placeholder="Email" />
                                                     <label>Password</label>
-                                                    <input type="text" id="l_password" placeholder="Password" />
+                                                    <input type="password" id="l_password" placeholder="Password" />
 
                                         
                                                 <button id="login">SIGN IN</button>
